@@ -1,8 +1,7 @@
 body{
     text-align: center;
-    background-image: url("../resource/bg.png");
-
-
+    background-image: url("../resource/homepage/bg.png");
+    font-family: Helvetica, Arial, Hiragino Sans GB, "冬青黑体简体中文", "Microsoft YaHei", "微软雅黑", SimSun, "宋体", Heiti, "黑体", sans-serif;
 }
 
 [class *= col-]{
@@ -15,10 +14,7 @@ body{
     bottom: -100px;
 }
 
-label{
-    color: #eeeeee;
-    font-weight: normal;
-}
+
 .logo{
     padding: 0 0 20px 0;
 }
@@ -36,36 +32,70 @@ h1, h2 {
     color: #555;
     line-height: 50px;
 }
-.form-group{
+
+
+.form-right{
+    border-bottom-right-radius: 8px;
+    border-top-right-radius: 8px;
+    background: rgba(64, 73, 105, 0.86);
+    height: 350px;
+}
+
+/*登录 注册切换部分*/
+
+.form-top {
+    overflow: hidden;
+    padding: 20px 60px 10px 40px;
+
+    -moz-border-radius: 4px 4px 0 0; -webkit-border-radius: 4px 4px 0 0; border-radius: 4px 4px 0 0;
     text-align: left;
 }
+/*输入框部分*/
+.form-bottom {
+    padding: 5px 80px 30px 40px;
+    height: 230px;
+    -moz-border-radius: 0 0 0 0; -webkit-border-radius: 0 0 0 0; border-radius: 0 0 0 0;
+    text-align: left;
+}
+.form-button{
+    padding-left: 40px;
+    text-align: left;
+}
+.form-button a{
+    margin-left: 20px;
+    top:5px;
+}
+.form-group{
+    text-align: left;
+    margin-bottom: 5px;
+}
+/*输入框*/
 .form-group input{
     border-left: none;border-top: none;border-right: none;
     border-bottom-color: #0c5460;
     box-shadow: none;
 }
-
-.form-top {
-    overflow: hidden;
-    padding: 20px 40px 10px 25px;
-
-    -moz-border-radius: 4px 4px 0 0; -webkit-border-radius: 4px 4px 0 0; border-radius: 4px 4px 0 0;
-    text-align: left;
+.form-control{
+    height:27px;
 }
 
-.form-bottom {
-    padding: 25px 60px 30px 40px;
-    -moz-border-radius: 0 0 4px 4px; -webkit-border-radius: 0 0 4px 4px; border-radius: 0 0 4px 4px;
-    text-align: left;
-}
+/*轮换界面部分*/
 .form-left{
+    border-bottom-left-radius: 8px;
+    border-top-left-radius: 8px;
+
     background: rgba(189, 228, 244, 0.64);
     height: 350px;
 }
-.form-left-top{
 
+label{
+    font-size: 8px;
+    color: #eeeeee;
+    font-weight: normal;
+    margin-bottom: 2px;
 }
 
+/*每日推荐*/
 .form-left-top h1{
     margin-top: 0;
     padding-top: 10px;
@@ -75,15 +105,14 @@ h1, h2 {
     line-height: 50px;
     text-align: center;
 }
+
+/*故事推荐*/
 .form-left-bottom{
     text-align: center;
     padding: 25px 40px 30px 40px;
 
 }
-.form-right{
-    background: rgba(64, 73, 105, 0.86);
-    height: 350px;
-}
+
 
 
 .nav-tabs>li.active>a, .nav-tabs>li.active>a:focus, .nav-tabs>li.active>a:hover {
