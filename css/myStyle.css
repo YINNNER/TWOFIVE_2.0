@@ -11,7 +11,7 @@ body{
 
 
 .carousel-indicators {
-    bottom: -100px;
+    bottom: -80px;
 }
 
 
@@ -77,6 +77,7 @@ h1, h2 {
 }
 .form-control{
     height:27px;
+    padding: 0 0;
 }
 
 /*轮换界面部分*/
@@ -113,39 +114,47 @@ label{
 
 }
 
-
-
-.nav-tabs>li.active>a, .nav-tabs>li.active>a:focus, .nav-tabs>li.active>a:hover {
-    color:  #eeeeee;!important;
-    background-color:rgba(64, 73, 105, 0.86);!important;
-    border-bottom: 1px solid #DC552C;!important;
-
-
-}
-
 .nav>li>a:focus, .nav>li>a:hover {
 
-    background-color: rgba(64, 73, 105, 0.86);
+    background-color: rgba(64, 73, 105, 0.0);
 }
 /*按钮浮动时的样式*/
 .nav-tabs>li>a {
     border-radius: 0 0 0 0;
     border: none;
     margin-right: 0;
-    border-left: 1px solid #DC552C;
+    border-bottom: 1px solid rgba(64, 73, 105, 0.0);
+    -o-transition: all .5s; -moz-transition: all .5s; -webkit-transition: all .5s; -ms-transition: all .5s; transition: all .5s;
+
 }
 .nav-tabs {
      border-bottom: none;
 }
 
 .nav-tabs>li.active>a, .nav-tabs>li.active>a:focus, .nav-tabs>li.active>a:hover {
-    color: rgba(64, 73, 105, 0.86);
+    color: rgba(64, 73, 105, 0.0);
     background-color: #fff;
     border: 1px solid #ddd;
+    border-bottom-color:#DC552C;
+
+
 }
+
+
+
+
+.nav-tabs>li>a:hover {
+
+    border-bottom-color:#DC552C ;
+}
+
+
+
+
 
 .form-control:focus {
     border-color: #eeeeee;
+
 }
 
 a{
@@ -154,6 +163,7 @@ a{
 
 a:focus, a:hover {
     color: #eeeeee;
+
 }
 
 
@@ -165,8 +175,12 @@ a:focus {
 
 .nav-tabs>li.active>a, .nav-tabs>li.active>a:focus, .nav-tabs>li.active>a:hover {
     color: #ffffff;
-    background-color: rgba(64, 73, 105, 0.86);
-    border: none;
+    background-color: rgba(64, 73, 105, 0.00);
+    border-top: none;
+    border-left: none;
+    border-right: none;
+
+
 }
 
 
@@ -176,20 +190,32 @@ a:focus {
 
 .carousel-indicators li {
     display: inline-block;
-    width: 10px;
-    height: 10px;
+    width: 8px;
+    height: 8px;
+    margin: 2px;
+    text-indent: -999px;
+    border: 1px solid #DC552C;
+    /*border-radius: 10px;*/
+    cursor: pointer;
+    /*background-color: #DC552C;*/
+}
+.carousel-indicators li .active{
+    display: inline-block;
+    width: 8px;
+    height: 8px;
     margin: 2px;
     text-indent: -999px;
     border: 1px solid #DC552C;
     border-radius: 10px;
     cursor: pointer;
-    /*background-color: #DC552C;*/
+
 }
 .carousel-indicators .active {
-    margin: 0;
-    width: 12px;
-    height: 12px;
+    margin: 2px;
+    width: 9px;
+    height: 9px;
+
     background-color: #DC552C;
-    box-shadow: #0c5460;
+
 }
 

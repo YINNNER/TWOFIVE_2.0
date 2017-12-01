@@ -7,11 +7,12 @@ textarea.form-control {
     margin: 0;
 
     vertical-align: middle;
-    background: rgba(64, 73, 105, 0.85);
+    background: rgba(64, 73, 105, 0.0);
+    opacity: 0.85;
     border-bottom: 1px solid #eeeeee;
     /*font-family: 'Roboto', sans-serif;*/
     /*输入框内提示文字*/
-    font-size: 3px;
+    font-size: 5px;
     font-weight: normal;
     /*line-height: 50px;*/
     color: #eeeeee;
