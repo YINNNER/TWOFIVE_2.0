@@ -1,8 +1,7 @@
 body{
     text-align: center;
-    background-image: url("../resource/bg.png");
-
-
+    background-image: url("../resource/homepage/bg.png");
+    font-family: Helvetica, Arial, Hiragino Sans GB, "冬青黑体简体中文", "Microsoft YaHei", "微软雅黑", SimSun, "宋体", Heiti, "黑体", sans-serif;
 }
 
 [class *= col-]{
@@ -12,13 +11,10 @@ body{
 
 
 .carousel-indicators {
-    bottom: -100px;
+    bottom: -80px;
 }
 
-label{
-    color: #eeeeee;
-    font-weight: normal;
-}
+
 .logo{
     padding: 0 0 20px 0;
 }
@@ -36,36 +32,71 @@ h1, h2 {
     color: #555;
     line-height: 50px;
 }
-.form-group{
+
+
+.form-right{
+    border-bottom-right-radius: 8px;
+    border-top-right-radius: 8px;
+    background: rgba(64, 73, 105, 0.86);
+    height: 350px;
+}
+
+/*登录 注册切换部分*/
+
+.form-top {
+    overflow: hidden;
+    padding: 20px 60px 10px 40px;
+
+    -moz-border-radius: 4px 4px 0 0; -webkit-border-radius: 4px 4px 0 0; border-radius: 4px 4px 0 0;
     text-align: left;
 }
+/*输入框部分*/
+.form-bottom {
+    padding: 5px 80px 30px 40px;
+    height: 230px;
+    -moz-border-radius: 0 0 0 0; -webkit-border-radius: 0 0 0 0; border-radius: 0 0 0 0;
+    text-align: left;
+}
+.form-button{
+    padding-left: 40px;
+    text-align: left;
+}
+.form-button a{
+    margin-left: 20px;
+    top:5px;
+}
+.form-group{
+    text-align: left;
+    margin-bottom: 5px;
+}
+/*输入框*/
 .form-group input{
     border-left: none;border-top: none;border-right: none;
     border-bottom-color: #0c5460;
     box-shadow: none;
 }
-
-.form-top {
-    overflow: hidden;
-    padding: 20px 40px 10px 25px;
-
-    -moz-border-radius: 4px 4px 0 0; -webkit-border-radius: 4px 4px 0 0; border-radius: 4px 4px 0 0;
-    text-align: left;
+.form-control{
+    height:27px;
+    padding: 0 0;
 }
 
-.form-bottom {
-    padding: 25px 60px 30px 40px;
-    -moz-border-radius: 0 0 4px 4px; -webkit-border-radius: 0 0 4px 4px; border-radius: 0 0 4px 4px;
-    text-align: left;
-}
+/*轮换界面部分*/
 .form-left{
+    border-bottom-left-radius: 8px;
+    border-top-left-radius: 8px;
+
     background: rgba(189, 228, 244, 0.64);
     height: 350px;
 }
-.form-left-top{
 
+label{
+    font-size: 8px;
+    color: #eeeeee;
+    font-weight: normal;
+    margin-bottom: 2px;
 }
 
+/*每日推荐*/
 .form-left-top h1{
     margin-top: 0;
     padding-top: 10px;
@@ -75,48 +106,55 @@ h1, h2 {
     line-height: 50px;
     text-align: center;
 }
+
+/*故事推荐*/
 .form-left-bottom{
     text-align: center;
     padding: 25px 40px 30px 40px;
 
 }
-.form-right{
-    background: rgba(64, 73, 105, 0.86);
-    height: 350px;
-}
-
-
-.nav-tabs>li.active>a, .nav-tabs>li.active>a:focus, .nav-tabs>li.active>a:hover {
-    color:  #eeeeee;!important;
-    background-color:rgba(64, 73, 105, 0.86);!important;
-    border-bottom: 1px solid #DC552C;!important;
-
-
-}
 
 .nav>li>a:focus, .nav>li>a:hover {
 
-    background-color: rgba(64, 73, 105, 0.86);
+    background-color: rgba(64, 73, 105, 0.0);
 }
 /*按钮浮动时的样式*/
 .nav-tabs>li>a {
     border-radius: 0 0 0 0;
     border: none;
     margin-right: 0;
-    border-left: 1px solid #DC552C;
+    border-bottom: 1px solid rgba(64, 73, 105, 0.0);
+    -o-transition: all .5s; -moz-transition: all .5s; -webkit-transition: all .5s; -ms-transition: all .5s; transition: all .5s;
+
 }
 .nav-tabs {
      border-bottom: none;
 }
 
 .nav-tabs>li.active>a, .nav-tabs>li.active>a:focus, .nav-tabs>li.active>a:hover {
-    color: rgba(64, 73, 105, 0.86);
+    color: rgba(64, 73, 105, 0.0);
     background-color: #fff;
     border: 1px solid #ddd;
+    border-bottom-color:#DC552C;
+
+
 }
+
+
+
+
+.nav-tabs>li>a:hover {
+
+    border-bottom-color:#DC552C ;
+}
+
+
+
+
 
 .form-control:focus {
     border-color: #eeeeee;
+
 }
 
 a{
@@ -125,6 +163,7 @@ a{
 
 a:focus, a:hover {
     color: #eeeeee;
+
 }
 
 
@@ -136,8 +175,12 @@ a:focus {
 
 .nav-tabs>li.active>a, .nav-tabs>li.active>a:focus, .nav-tabs>li.active>a:hover {
     color: #ffffff;
-    background-color: rgba(64, 73, 105, 0.86);
-    border: none;
+    background-color: rgba(64, 73, 105, 0.00);
+    border-top: none;
+    border-left: none;
+    border-right: none;
+
+
 }
 
 
@@ -147,20 +190,32 @@ a:focus {
 
 .carousel-indicators li {
     display: inline-block;
-    width: 10px;
-    height: 10px;
+    width: 8px;
+    height: 8px;
+    margin: 2px;
+    text-indent: -999px;
+    border: 1px solid #DC552C;
+    /*border-radius: 10px;*/
+    cursor: pointer;
+    /*background-color: #DC552C;*/
+}
+.carousel-indicators li .active{
+    display: inline-block;
+    width: 8px;
+    height: 8px;
     margin: 2px;
     text-indent: -999px;
     border: 1px solid #DC552C;
     border-radius: 10px;
     cursor: pointer;
-    /*background-color: #DC552C;*/
+
 }
 .carousel-indicators .active {
-    margin: 0;
-    width: 12px;
-    height: 12px;
+    margin: 2px;
+    width: 9px;
+    height: 9px;
+
     background-color: #DC552C;
-    box-shadow: #0c5460;
+
 }
 

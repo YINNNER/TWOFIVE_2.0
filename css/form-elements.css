@@ -7,14 +7,16 @@ textarea.form-control {
     margin: 0;
 
     vertical-align: middle;
-    background: rgba(64, 73, 105, 0.85);
+    background: rgba(64, 73, 105, 0.0);
+    opacity: 0.85;
     border-bottom: 1px solid #eeeeee;
     /*font-family: 'Roboto', sans-serif;*/
-    font-size: 10px;
-    font-weight: 300;
+    /*输入框内提示文字*/
+    font-size: 5px;
+    font-weight: normal;
     /*line-height: 50px;*/
     color: #eeeeee;
-    -moz-border-radius: 4px; -webkit-border-radius: 4px; border-radius: 4px;
+    -moz-border-radius: 0; -webkit-border-radius: 0; border-radius: 0;
     -moz-box-shadow: none; -webkit-box-shadow: none; box-shadow: none;
     -o-transition: all .3s; -moz-transition: all .3s; -webkit-transition: all .3s; -ms-transition: all .3s; transition: all .3s;
 }
@@ -45,3 +47,29 @@ textarea:-ms-input-placeholder, textarea.form-control:-ms-input-placeholder { co
 
 input[type="text"]::-webkit-input-placeholder, input[type="password"]::-webkit-input-placeholder,
 textarea::-webkit-input-placeholder, textarea.form-control::-webkit-input-placeholder { color: #eeeeee; }
+
+button.btn {
+    width: 90px;
+    height: 30px;
+    vertical-align: middle;
+    background: #DC552C;
+    border: 0;
+    border-radius: 17px;
+    font-size: 8px;
+    color: #fff;
+    -moz-border-radius: 17px;
+    -webkit-border-radius: 17px;
+    /*加投影：#394047，不透明度20%，偏右下，大小27px，距离11px，扩展5%（css样式可能不一样，按看到的效果调整）*/
+    -webkit-box-shadow: 3px 3px 5px 0 rgba(57,64,71,0.2) ;
+    box-shadow: 3px 3px 5px 0 rgba(57,64,71,0.2) ;
+    -moz-box-shadow: 3px 3px 5px 0 rgba(57,64,71,0.2) ;
+    -o-transition: all .3s; -moz-transition: all .3s; -webkit-transition: all .3s; -ms-transition: all .3s; transition: all .3s;
+}
+
+button.btn:hover { opacity: 0.6; color: #fff; }
+
+button.btn:active { outline: 0; opacity: 0.6; color: #fff; -moz-box-shadow: none; -webkit-box-shadow: none; box-shadow: none; }
+
+button.btn:focus { outline: 0; opacity: 0.6; background: #d1431f; color: #eeeeee; }
+
+button.btn:active:focus, button.btn.active:focus { outline: 0; opacity: 0.6; background: #d1431f; color: #eeeeee; }
