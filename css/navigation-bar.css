@@ -22,7 +22,7 @@ a {
     background-color: #f6f6f6;
     opacity: 0.9;
     box-shadow: #DC552C;
-
+z-index: 2000;
 }
 
 
