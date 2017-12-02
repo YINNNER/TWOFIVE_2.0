@@ -22,10 +22,12 @@ a {
     background-color: #f6f6f6;
     opacity: 0.9;
     box-shadow: #DC552C;
+
 }
 
+
 #nav .col-sm-1 #logoimg{
-   height: 30px;
+    height: 30px;
     padding-top: 5px;
 }
 

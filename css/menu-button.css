@@ -11,13 +11,16 @@
 
 html,
 body {
-    height: 100%;
+    /*height: 100%;*/
     padding: 0;
     margin: 0;
 }
 
 body {
     background-image: url("../resource/homepage/bg.png");
+    /*背景拉伸不重复*/
+    background-repeat: no-repeat;
+    background-size: cover;
     color: #fff;
 }
 
