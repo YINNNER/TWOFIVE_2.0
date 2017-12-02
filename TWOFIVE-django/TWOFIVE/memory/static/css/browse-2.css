@@ -1,0 +1,67 @@
+*, *:after, *:before {
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+}
+
+#show{
+    margin-top: 30px;
+    margin-left: 10%;
+    margin-right: 5%;
+}
+.head{
+    height:40px;
+    width: 40px;
+    border-radius:50%;
+    margin-top: 0;
+    padding-top: 0;
+    margin-bottom: 5px;
+}
+.sharing{
+    margin-top: 10px;
+    font-size: medium;
+}
+
+
+
+.md-trigger {
+    border: none;
+    border-radius:8px;
+    padding: 1.2em 1.2em;
+    background:#eeeeee;
+    opacity: 0.8;
+    color: #0f0f0f;
+    font-family: "Helvetica";
+    letter-spacing: 1px;
+    cursor: pointer;
+    display: inline-block;
+    margin-top: 20px;
+    margin-bottom: 0;
+    margin-left: 4px;
+    margin-right: 4px;
+    width: 23%;
+    height: 180px;
+    vertical-align: top;
+}
+
+
+.md-trigger#angry-1:hover, .md-trigger#angry-2:hover,.md-trigger#angry-3:hover {
+    background-color: #B61414;
+}
+
+.md-trigger#peace-1:hover,.md-trigger#peace-2:hover,.md-trigger#peace-3:hover,.md-trigger#peace-4:hover{
+    background-color: forestgreen;
+}
+
+.md-trigger#exited-1:hover,.md-trigger#exited-2:hover,.md-trigger#exited-3:hover{
+    background-color: #DC552C;
+}
+.md-trigger#happy-1:hover, .md-trigger#happy-2:hover, .md-trigger#happy-3:hover, .md-trigger#happy-4:hover{
+    background-color: yellow;
+}
+.md-trigger#down-1:hover, .md-trigger#down-2:hover{
+    background-color: grey;
+}
+.md-trigger#sad-1:hover, .md-trigger#sad-2:hover, .md-trigger#sad-3:hover{
+    background-color: skyblue;
+}
