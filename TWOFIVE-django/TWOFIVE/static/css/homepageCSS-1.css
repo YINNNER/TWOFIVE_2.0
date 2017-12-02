@@ -1,0 +1,43 @@
+body {
+    font-family:"Helvetica"
+}
+
+a, button {
+    outline: none;
+}
+
+a {
+    text-decoration: none;
+}
+
+.container{
+    padding-right: 15px;
+    padding-left: 15px;
+    margin-left:0;
+    margin-right: 0;
+    width: 100%;
+}
+
+
+#nav .col-md-5 #logoimg{
+   height: 30px;
+    padding-top: 5px;
+}
+
+#moreimg{
+    height:5px;
+    width:30px;
+    padding-top: 15px;
+}
+#dropdownMenu1{
+
+}
+#nav{
+    width: 110%;
+    background-color: #f6f6f6;
+    opacity: 0.9;
+
+    box-shadow: #DC552C;
+}
+
+

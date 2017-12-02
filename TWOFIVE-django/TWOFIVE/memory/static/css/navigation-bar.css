@@ -1,0 +1,112 @@
+body {
+    font-family:"Helvetica"
+}
+
+a, button {
+    outline: none;
+}
+
+a {
+    text-decoration: none;
+}
+
+.container{
+    padding-right: 15px;
+    padding-left: 15px;
+    margin-left:0;
+    margin-right: 0;
+    width: 100%;
+}
+
+#nav{
+    background-color: #f6f6f6;
+    opacity: 0.9;
+    box-shadow: #DC552C;
+z-index: 2000;
+}
+
+
+#nav .col-sm-1 #logoimg{
+    height: 30px;
+    padding-top: 5px;
+}
+
+#moreimg{
+    width:22px;
+
+
+
+}
+
+
+.caret {
+    border-top: 0 dashed;
+
+}
+
+.btn-default {
+    color: #333;
+    background-color: #f6f6f6;
+    border:none;
+    /*float: right;*/
+}
+
+.btn-default.active, .btn-default.focus, .btn-default:active, .btn-default:focus, .btn-default:hover, .open>.dropdown-toggle.btn-default {
+    color: #333;
+    background-color: #f6f6f6;
+    border:none;
+    opacity: 0.8;
+
+}
+
+
+.input-group .form-control:first-child, .input-group-addon:first-child, .input-group-btn:first-child>.btn, .input-group-btn:first-child>.btn-group>.btn, .input-group-btn:first-child>.dropdown-toggle, .input-group-btn:last-child>.btn-group:not(:last-child)>.btn, .input-group-btn:last-child>.btn:not(:last-child):not(.dropdown-toggle) {
+    border-top-right-radius: 8px;
+    border-bottom-right-radius: 8px;
+}
+
+
+
+ .btn:active:focus, .btn:focus{
+     outline: none;
+     box-shadow: none;
+     opacity: 0.8;
+ }
+.dropdown-menu {
+    border-top-right-radius: 0;
+    border-top-left-radius: 0;
+    border: none;
+}
+
+.form-control {
+    width: 100px;
+    box-shadow: none;
+    border-radius: 8px;
+    border-color: #98a1c2;
+}
+
+.input-group .form-control {
+    height: 25px;
+    width: 150px;
+    margin-bottom: 5px;
+    margin-top: 5px;
+
+
+}
+
+.input-group {
+    display: block;
+}
+
+
+.input-group .form-control, .input-group-addon, .input-group-btn {
+    display: unset;
+}
+
+.form-control:focus {
+    border-color: #818aaa;
+}
+.input-group .form-control:last-child {
+    border-radius: 8px;
+
+}

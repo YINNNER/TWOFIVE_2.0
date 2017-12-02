@@ -1,0 +1,201 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title></title>
+    <!-- 新 Bootstrap 核心 CSS 文件 -->
+    <link rel="stylesheet" href="http://cdn.bootcss.com/bootstrap/3.3.4/css/bootstrap.min.css">
+
+    <!-- 可选的Bootstrap主题文件（一般不用引入） -->
+    <link rel="stylesheet" href="http://cdn.bootcss.com/bootstrap/3.3.4/css/bootstrap-theme.min.css">
+
+    <link rel="stylesheet" href="/static/css/myStyle.css">
+    <link rel="stylesheet" href="/static/css/form-elements.css">
+
+
+</head>
+<body>
+<div class="inner-bg">
+<div class="container">
+    <div class="row">
+        <div class="col-sm-6 col-sm-offset-3 text">
+            <div class="logo">
+                <img src="/static/resource/homepage/logo.png">
+            </div>
+        </div>
+
+    </div>
+    <div class="row">
+        <div class="col-sm-8 col-sm-offset-2 form-box">
+            <div class="col-sm-6">
+                <div class="form-left">
+                    <div class="form-left-top">
+                        <h1>每日推荐</h1>
+                    </div>
+                    <div id="myCarousel" class="carousel slide">
+                        <!-- 轮播（Carousel）指标 -->
+                        <ol class="carousel-indicators">
+                            <li data-target="#myCarousel" data-slide-to="0" class="active" ></li>
+                            <li data-target="#myCarousel" data-slide-to="1"></li>
+                            <li data-target="#myCarousel" data-slide-to="2"></li>
+                            <li data-target="#myCarousel" data-slide-to="3"></li>
+                            <li data-target="#myCarousel" data-slide-to="4"></li>
+                        </ol>
+                        <!-- 轮播（Carousel）项目 -->
+                        <div class="carousel-inner">
+                            <div class="item active">
+                                <div class="form-left-bottom">
+                                    <p>
+                                        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Curabitur sagittis fringilla mattis. Nulla facilisi.
+                                        Integer vestibulum mattis odio nec malesuada.
+
+                                    </p>
+                                </div>
+                            </div>
+                            <div class="item">
+                                <div class="form-left-bottom">
+                                    <p>
+                                        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Curabitur sagittis fringilla mattis. Nulla facilisi.
+                                        Integer vestibulum mattis odio nec malesuada.
+
+                                    </p>
+                                </div>
+                            </div>
+                            <div class="item">
+                                <div class="form-left-bottom">
+                                    <p>
+                                        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Curabitur sagittis fringilla mattis. Nulla facilisi.
+                                        Integer vestibulum mattis odio nec malesuada.
+
+                                    </p>
+                                </div>
+                            </div>
+                            <div class="item">
+                                <div class="form-left-bottom">
+                                    <p>
+                                        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Curabitur sagittis fringilla mattis. Nulla facilisi.
+                                        Integer vestibulum mattis odio nec malesuada.
+
+                                    </p>
+                                </div>
+                            </div>
+                            <div class="item">
+                                <div class="form-left-bottom">
+                                    <p>
+                                        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Curabitur sagittis fringilla mattis. Nulla facilisi.
+                                        Integer vestibulum mattis odio nec malesuada.
+
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+                        <!-- 轮播（Carousel）导航 -->
+                        <a class="carousel-control left" href="#myCarousel"
+                           data-slide="prev">&lsaquo;</a>
+                        <a class="carousel-control right" href="#myCarousel"
+                           data-slide="next">&rsaquo;</a>
+                    </div>
+                </div>
+
+            </div>
+            <div class="col-sm-6">
+                <div class="form-right">
+                    <div class="form-top">
+                        <ul class="nav nav-tabs">
+                            <li>
+                                <a href="#login_page" data-toggle="tab">登录</a>
+                            </li>
+                            <li class="active">
+                                <a href="#sign_page" data-toggle="tab">注册</a>
+                            </li>
+                        </ul>
+                    </div>
+
+                    <div class="tab-content">
+                        <div class="tab-pane" id="login_page">
+                            <form action="{% url 'memory:login_view' %}" method="post">
+                                {% csrf_token %}
+                                <div class="form-bottom">
+                                    <div class="form-group">
+                                        <label for="InputUserName1">用户：</label>
+                                        {{ login_form.username }}
+                                    </div>
+
+                                    <div class="form-group">
+                                        <label for="InputPassword1">密码：</label>
+                                        <br>
+                                        {{ login_form.password }}
+                                    </div>
+                                    {{ login_form.non_field_errors }}
+
+                                </div>
+                                <div class="form-button">
+                                    <button type="submit" class="btn" name="submit" value="login">登录</button>
+                                    <label>
+                                        <a href="{% url 'password_reset' %}">忘记密码?</a>
+                                    </label>
+                                    <input type="hidden" name="next" value="{{ next }}"/>
+                                </div>
+                            </form>
+
+                        </div>
+                        <div class="tab-pane active" id="sign_page">
+                            <form action="{% url "memory:register" %}" method="post">
+                            {% csrf_token %}
+                            <div class="form-bottom">
+
+                                <div class="form-group">
+                                    <label for="InputUserName2">用户名：</label>
+                                    {{ form.username }}
+                                    {{ form.username.errors }}
+                                </div>
+                                <div class="form-group">
+                                    <label for="InputEmail1">邮箱：</label>
+                                    {{ form.email }}
+                                    {{ form.email.errors }}
+                                </div>
+                                <div class="form-group">
+                                    <label for="InputPassword2">密码:</label>
+                                    <br>
+                                    {{ form.password1 }}
+                                    {{ form.password1.errors }}
+                                </div>
+                                <div class="form-group">
+                                    <label for="InputPasswordRepeat">确认密码:</label>
+                                    <br>
+                                    {{ form.password2 }}
+                                    {{ form.password2.errors }}
+                                </div>
+                                {% if field.help_text %}
+                                <p>{{ field.help_text|safe }}</p>
+                                {% endif %}
+
+                            </div>
+                            <div class="form-button">
+                                <button type="submit" class="btn" name="submit" value="regist">注册</button>
+
+                            </div>
+                            </form>
+
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+    </div>
+</div>
+</div>
+
+
+
+
+<script src="http://cdn.bootcss.com/jquery/1.11.2/jquery.min.js"></script>
+
+<!-- 最新的 Bootstrap 核心 JavaScript 文件 -->
+<script src="http://cdn.bootcss.com/bootstrap/3.3.4/js/bootstrap.min.js"></script>
+</body>
+</html>
