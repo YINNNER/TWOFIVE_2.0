@@ -1,7 +1,4 @@
 
-/*#memories {*/
-    /*min-height: 100%;*/
-/*}*/
 
 .md-modal {
     position: fixed;
@@ -34,8 +31,8 @@
     top: 0;
     left: 0;
     z-index: 1000;
-    opacity: 0;
-    background:url("../resource/homepage/bg.png");
+    background-color: #0f0f0f;
+    opacity: 0.7;
     -webkit-transition: all 0.3s;
     -moz-transition: all 0.3s;
     transition: all 0.3s;
@@ -149,52 +146,13 @@
 .md-show.md-effect-17 ~ .md-overlay,
 .md-show.md-effect-18 ~ .md-overlay,
 .md-show.md-effect-19 ~ .md-overlay {
-    background-color: #fff;
+    background-color: #0f0f0f;
+    opacity: 0.7;
 
 }
 
 
-/*.md-effect-1 .md-content h3,*/
-/*.md-effect-2 .md-content h3,*/
-/*.md-effect-3 .md-content h3,*/
-/*.md-effect-4 .md-content h3,*/
-/*.md-effect-5 .md-content h3,*/
-/*.md-effect-6 .md-content h3,*/
-/*.md-effect-7 .md-content h3,*/
-/*.md-effect-8 .md-content h3,*/
-/*.md-effect-9 .md-content h3,*/
-/*.md-effect-10 .md-content h3,*/
-/*.md-effect-11 .md-content h3,*/
-/*.md-effect-12 .md-content h3,*/
-/*.md-effect-13 .md-content h3,*/
-/*.md-effect-14 .md-content h3,*/
-/*.md-effect-15 .md-content h3,*/
-/*.md-effect-16 .md-content h3,*/
-/*.md-effect-17.md-content h3,*/
-/*.md-effect-18 .md-content h3,*/
-/*.md-effect-19 .md-content h3,*/
-/*.md-effect-1 .md-content,*/
-/*.md-effect-2 .md-content,*/
-/*.md-effect-3 .md-content,*/
-/*.md-effect-4 .md-content,*/
-/*.md-effect-5 .md-content,*/
-/*.md-effect-6 .md-content,*/
-/*.md-effect-7 .md-content,*/
-/*.md-effect-8 .md-content,*/
-/*.md-effect-9 .md-content,*/
-/*.md-effect-10 .md-content,*/
-/*.md-effect-11 .md-content,*/
-/*.md-effect-12 .md-content,*/
-/*.md-effect-13 .md-content,*/
-/*.md-effect-14 .md-content,*/
-/*.md-effect-15 .md-content,*/
-/*.md-effect-16 .md-content,*/
-/*.md-effect-17 .md-content,*/
-/*.md-effect-18 .md-content,*/
-/*.md-effect-19 .md-content{*/
-    /*background-color: #f6f6f6;*/
-    /*opacity: 0.1;*/
-/*}*/
+
 .md-show.md-effect-1 .md-content,
 .md-show.md-effect-2 .md-content,
 .md-show.md-effect-3 .md-content,
@@ -219,5 +177,26 @@
     -ms-transform: scale(1);
     transform: scale(1);
     opacity: 0.8;
+
 }
 
+.md-close{
+    border: none;
+    border-radius:8px;
+    padding: 0.6em 1.2em;
+    background-color: #333333;
+    color: #fff;
+    opacity: 0.8;
+    font-family: Helvetica;
+
+    letter-spacing: 1px;
+    cursor: pointer;
+    display: inline-block;
+    margin: 8px 4px;
+}
+.md-close:hover{
+
+    background: lightgray;
+    opacity: 0.8;
+    color: #0f0f0f;
+}

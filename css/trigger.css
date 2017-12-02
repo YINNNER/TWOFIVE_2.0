@@ -12,7 +12,6 @@
     opacity: 0.8;
     color: #0f0f0f;
     font-family: 'Lato', Calibri, Arial, sans-serif;
-
     letter-spacing: 1px;
     cursor: pointer;
     display: inline-block;
@@ -41,21 +40,4 @@
     background-color: skyblue;
 }
 
-.md-close{
-    border: none;
-    border-radius:8px;
-    padding: 0.6em 1.2em;
-    background:#eeeeee;
-    opacity: 0.8;
-    color: #0f0f0f;
-    font-family: 'Lato', Calibri, Arial, sans-serif;
 
-    letter-spacing: 1px;
-    cursor: pointer;
-    display: inline-block;
-    margin: 8px 4px;
-}
-.md-close:hover{
-    background-color: #333333;
-    color: inherit;
-}
