@@ -1,7 +1,8 @@
 
 #bar{
     background-image: url("../resource/homepage/infobar.png");
-
+    background-repeat: no-repeat;
+    background-size:cover;
     height: 251px;
 
     margin-top: -35px;
