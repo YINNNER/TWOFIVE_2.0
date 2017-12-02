@@ -18,6 +18,11 @@ a {
     width: 100%;
 }
 
+#nav{
+    background-color: #f6f6f6;
+    opacity: 0.9;
+    box-shadow: #DC552C;
+}
 
 #nav .col-sm-1 #logoimg{
    height: 30px;
@@ -33,16 +38,9 @@ a {
 #dropdownMenu1{
 
 }
-#nav{
 
-    background-color: #f6f6f6;
-    opacity: 0.9;
-
-    box-shadow: #DC552C;
-}
 
 .caret {
-
     border-top: 0 dashed;
 
 }

@@ -1,0 +1,29 @@
+.about4{
+    width: 120px;
+    margin-top: 0px;
+    margin-left: -30px;
+
+}
+.about4_main{
+    position:relative;
+    padding-left:20px;
+    overflow:hidden;}
+.line{
+    width:3px;
+    height:100%;
+    background-color:#FFF;
+    position:absolute;
+    left:26px;
+    z-index:-1;}
+.about4_main ul li{
+    padding-top: 5px;
+    padding-left:25px;
+    font-size:14px;
+    color:#fff;
+    line-height:20px;
+    margin-bottom:30px;
+    background:url(../resource/homepage/time_dot.png) left center no-repeat;
+}
+.about4_main ul li:last-child{
+    margin-bottom:200px;
+}
