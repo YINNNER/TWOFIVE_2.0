@@ -90,7 +90,7 @@ h1, h2 {
 }
 
 label{
-    font-size: 8px;
+    font-size: 12px;
     color: #eeeeee;
     font-weight: normal;
     margin-bottom: 2px;
@@ -123,8 +123,9 @@ label{
     border-radius: 0 0 0 0;
     border: none;
     margin-right: 0;
-    border-bottom: 1px solid rgba(64, 73, 105, 0.0);
-    -o-transition: all .5s; -moz-transition: all .5s; -webkit-transition: all .5s; -ms-transition: all .5s; transition: all .5s;
+    color: #d2d2d2;
+    border-bottom: 1px solid rgba(30, 53, 85, 0.00);
+    -o-transition: all 1s; -moz-transition: all 1s; -webkit-transition: all 1s; -ms-transition: all 1s; transition: all 1s;
 
 }
 .nav-tabs {
@@ -144,8 +145,8 @@ label{
 
 
 .nav-tabs>li>a:hover {
-
-    border-bottom-color:#DC552C ;
+    color: #ffffff;
+    border-bottom-color:rgba(30, 53, 85, 0.00) ;
 }
 
 
@@ -188,6 +189,10 @@ a:focus {
     background-image: none;
 }
 
+.carousel-control.left,.carousel-control.right{
+    background-image: none;
+}
+
 .carousel-indicators li {
     display: inline-block;
     width: 8px;
@@ -219,3 +224,25 @@ a:focus {
 
 }
 
+
+.carousel-control {
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    width: 15%;
+    font-size: 20px;
+    color:transparent;
+    text-align: center;
+    text-shadow: none;
+    filter: alpha(opacity=0);
+
+}
+.carousel-control:focus, .carousel-control:hover {
+    color: transparent;
+    text-decoration: none;
+    filter: alpha(opacity=0);
+    outline: 0;
+    text-shadow: none;
+    opacity: 0;
+}

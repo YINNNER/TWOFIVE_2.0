@@ -12,7 +12,7 @@ textarea.form-control {
     border-bottom: 1px solid #eeeeee;
     /*font-family: 'Roboto', sans-serif;*/
     /*输入框内提示文字*/
-    font-size: 5px;
+    font-size: 9px;
     font-weight: normal;
     /*line-height: 50px;*/
     color: #eeeeee;
@@ -34,7 +34,7 @@ input[type="email"]:focus,
 textarea:focus,
 textarea.form-control:focus {
     outline: 0;
-    background: rgba(64, 73, 105, 0.85);
+    background: rgba(64, 73, 105, 0.0);
     /*border: 3px solid #ccc;*/
     -moz-box-shadow: none; -webkit-box-shadow: none; box-shadow: none;
 }
@@ -55,7 +55,6 @@ button.btn {
     background: #DC552C;
     border: 0;
     border-radius: 17px;
-    font-size: 8px;
     color: #fff;
     -moz-border-radius: 17px;
     -webkit-border-radius: 17px;
