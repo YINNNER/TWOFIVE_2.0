@@ -1,0 +1,31 @@
+.wrap{
+    margin: 100px 0;
+
+}
+
+.info{
+    background-image: url("../resource/homepage/infobar.png");
+    height: 150px;
+    background-size:100% 100%
+}
+
+#infobar{
+    text-align: center;
+    padding-top: 50px;
+}
+
+#album_border{
+    background-color: #fafbfcc4;
+}
+
+.row.album{
+    margin: 15px 0;
+}
+
+.box{
+    overflow: hidden;
+}
+
+.photo{
+    height: 280px;
+}
