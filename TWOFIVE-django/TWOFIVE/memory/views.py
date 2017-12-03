@@ -29,7 +29,7 @@ def homepage(request):
 
 def login_view(request):
     if request.user.is_authenticated():
-        return homepage(request)
+        return redirect('/memory/homepage')
     login_form = LoginForm()
     if request.method == 'POST':
         submit=request.POST.get('submit')
