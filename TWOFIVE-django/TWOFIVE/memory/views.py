@@ -49,7 +49,10 @@ def login_view(request):
                 return HttpResponse('Invalid login')
         elif submit=='regist':
             regist_form=register(request)
-            return render(request,'registration/login.html',context={'login_form':login_form,'form':regist_form})
+            is_registed=False
+            if regist_form != None:
+                is_registed=True
+            return render(request,'registration/login.html',context={'login_form':login_form,'form':regist_form,'is_registed':is_registed})
     else:
         regist_form=register(request)
         return render(request,'registration/login.html',context={'login_form':login_form,'form':regist_form})
