@@ -8,6 +8,7 @@ from django.http import HttpResponse
 from rest_framework import viewsets
 from models import User
 from django.contrib.auth.models import Group
+from django.contrib.auth.decorators import login_required
 # Create your views here.
 
 def register(request):
@@ -21,12 +22,14 @@ def register(request):
         form = RegisterForm()
     return form
 
-
+@login_required
 def homepage(request):
     return render(request,'homepage.html')
 
 
 def login_view(request):
+    if request.user.is_authenticated():
+        return homepage(request)
     login_form = LoginForm()
     if request.method == 'POST':
         submit=request.POST.get('submit')
@@ -51,17 +54,19 @@ def login_view(request):
         regist_form=register(request)
         return render(request,'registration/login.html',context={'login_form':login_form,'form':regist_form})
 
-
+@login_required
 def writing(request):
     return render(request,'writing.html')
 
-
+@login_required
 def publish(request):
     return redirect('/memory/homepage')
 
+@login_required
 def browsing(request):
     return render(request,'browsing.html')
 
+@login_required
 def album(request):
     return render(request,'album.html')
 
