@@ -26,7 +26,7 @@ SECRET_KEY = 'ks6hzu6%19sv2@w&#eqln!cn8c@r@1%nju0izzqd@+%7mu@_=2'
 DEBUG = True
 
 # ALLOWED_HOSTS = ['10.132.56.121','127.0.0.1',]
-ALLOWED_HOSTS=[]
+ALLOWED_HOSTS=['127.0.0.1','192.168.157.1']
 
 # Application definition
 
@@ -38,6 +38,7 @@ INSTALLED_APPS = [
     'django.contrib.messages',
     'django.contrib.staticfiles',
     'memory',
+    'haystack'
 ]
 
 MIDDLEWARE = [
@@ -129,3 +130,10 @@ EMAIL_BACKEND='django.core.mail.backends.console.EmailBackend'
 LOGOUT_REDIRECT_URL='/memory/homepage'
 LOGIN_REDIRECT_URL='/memory/homepage'
 LOGIN_URL='/memory/login'
+
+HAYSTACK_CONNECTIONS={
+    'default':{
+        'ENGINE':'haystack.backends.whoosh_backend.WhooshEngine',
+        'PATH':os.path.join(BASE_DIR,'whoosh_index'),
+    },
+}
