@@ -28,6 +28,7 @@ def homepage(request):
 
 
 def login_view(request):
+    request.session.set_expiry(0)
     if request.user.is_authenticated():
         return redirect('/memory/homepage')
     login_form = LoginForm()
