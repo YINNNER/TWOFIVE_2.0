@@ -84,7 +84,14 @@
                 <div class="col-md-10">
                     <h2 id="sign">"总要有一个拿来回忆的地方"</h2>
                     <script>
-                        $("#sign").append()
+                        $(document).ready(function () {
+                            $.getJSON("{% url 'memory:ajax_name' %}",function(data){
+                                $("#sign").append(data.name);
+
+                            });
+
+
+                        })
                     </script>
                 </div>
             </div>

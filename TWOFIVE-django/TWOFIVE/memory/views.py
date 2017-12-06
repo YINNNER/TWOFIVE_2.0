@@ -7,6 +7,7 @@ from django.contrib.auth import  authenticate,login,logout
 from django.http import HttpResponse
 from django.contrib.auth.decorators import login_required
 from django.http import JsonResponse
+import json
 # Create your views here.
 
 def register(request):
@@ -78,5 +79,6 @@ def logout_view(request):
 
 
 def ajax_name(request):
-    username=request.session['username']
-    return JsonResponse({'name':username})
+    username={'name':'ha'}
+    # return JsonResponse(username)
+    return HttpResponse(json.dumps(username),content_type='application/json')
