@@ -61,6 +61,7 @@ def login_view(request):
 def writing(request):
     return render(request,'writing.html')
 
+# 发布
 @login_required
 def publish(request):
     if request.method == 'POST':
@@ -79,7 +80,7 @@ def logout_view(request):
     logout(request)
     return render_to_response('registration/login.html')
 
-
+# 传个人简介和用户名给homepage
 def ajax_name(request):
     username={'name':'ha'}
     # return JsonResponse(username)
