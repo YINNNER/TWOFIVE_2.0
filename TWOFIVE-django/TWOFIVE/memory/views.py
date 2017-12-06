@@ -5,7 +5,6 @@ from django.shortcuts import render,redirect,render_to_response
 from . forms import RegisterForm,LoginForm
 from django.contrib.auth import  authenticate,login,logout
 from django.http import HttpResponse
-from rest_framework import viewsets
 from models import User
 from django.contrib.auth.models import Group
 from django.contrib.auth.decorators import login_required
