@@ -38,6 +38,7 @@ INSTALLED_APPS = [
     'django.contrib.messages',
     'django.contrib.staticfiles',
     'memory',
+    'haystack'
 ]
 
 MIDDLEWARE = [
@@ -129,3 +130,10 @@ EMAIL_BACKEND='django.core.mail.backends.console.EmailBackend'
 LOGOUT_REDIRECT_URL='/memory/homepage'
 LOGIN_REDIRECT_URL='/memory/homepage'
 LOGIN_URL='/memory/login'
+
+HAYSTACK_CONNECTIONS={
+    'default':{
+        'ENGINE':'haystack.backends.whoosh_backend.WhooshEngine',
+        'PATH':os.path.join(os.path.dirname(__file__),'whoosh_index'),
+    },
+}
