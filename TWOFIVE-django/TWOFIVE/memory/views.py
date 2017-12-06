@@ -5,9 +5,8 @@ from django.shortcuts import render,redirect,render_to_response
 from . forms import RegisterForm,LoginForm
 from django.contrib.auth import  authenticate,login,logout
 from django.http import HttpResponse
-from models import User
-from django.contrib.auth.models import Group
 from django.contrib.auth.decorators import login_required
+from django.http import JsonResponse
 # Create your views here.
 
 def register(request):
@@ -76,3 +75,8 @@ def album(request):
 def logout_view(request):
     logout(request)
     return render_to_response('registration/login.html')
+
+
+def ajax_name(request):
+    username=request.session['username']
+    return JsonResponse({'name':username})
