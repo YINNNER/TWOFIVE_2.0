@@ -63,6 +63,8 @@ def writing(request):
 
 @login_required
 def publish(request):
+    if request.method == 'POST':
+        text=request.POST.get('text')
     return redirect('/memory/homepage')
 
 @login_required
@@ -82,3 +84,4 @@ def ajax_name(request):
     username={'name':'ha'}
     # return JsonResponse(username)
     return HttpResponse(json.dumps(username),content_type='application/json')
+
