@@ -8,6 +8,7 @@ from django.http import HttpResponse
 from django.contrib.auth.decorators import login_required
 from django.http import JsonResponse
 import json
+from TWOFIVE import settings
 # Create your views here.
 
 def register(request):
@@ -88,4 +89,30 @@ def ajax_name(request):
     username={'name':'ha'}
     # return JsonResponse(username)
     return HttpResponse(json.dumps(username),content_type='application/json')
+
+def upload_file(request,filename):
+    if request.method =='POST':
+        myFile=request.FILES.get(filename,None) #获取用户上传文件，若没有则为None
+        if not myFile:
+            return False
+        destination=open(settings.MEDIA_ROOT,myFile.name)
+        for chunk in myFile.chunks():
+            destination.write(chunk)
+            destination.close()
+            return True
+
+
+def user_setting(request):
+    if request.method=='POST':
+        nickname=request.POST.get('nickname')
+        title=request.POST.get('title')
+        portrait=request.POST.get('portrait')
+        isuploaded=upload_file(request,portrait)
+    if isuploaded == True:
+        is_success={'is_success':'success'}
+        return HttpResponse(json.dumps(is_success), content_type='application/json')
+    else:
+        is_success = {'is_success': 'failure'}
+        return HttpResponse(json.dumps(is_success), content_type='application/json')
+
 
