@@ -1,3 +1,4 @@
+# -*- coding: utf-8 -*-
 """
 Django settings for TWOFIVE project.
 
@@ -137,3 +138,7 @@ HAYSTACK_CONNECTIONS={
         'PATH':os.path.join(BASE_DIR,'whoosh_index'),
     },
 }
+
+# 存储用户上传文件的绝对路径
+MEDIA_URL='/media/'
+MEDIA_ROOT=os.path.join(BASE_DIR,'media')
