@@ -131,6 +131,6 @@ def user_setting(request):
                 is_success = {'is_success': 'failure'}
                 return HttpResponse(json.dumps(is_success), content_type='application/json')
         is_success={'is_success':'success'}
-        return HttpResponse(json.dumps(is_success), content_type='application/json')
+        return JsonResponse(is_success)
 
 
