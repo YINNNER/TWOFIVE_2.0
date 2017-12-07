@@ -11,6 +11,7 @@
     <link rel="stylesheet" type="text/css" href="css/navigation-bar.css" />
     <link rel="stylesheet" type="text/css" href="css/menu-button.css" />
     <link rel="stylesheet" type="text/css" href="css/writing.css" />
+    <link rel="stylesheet" type="text/css" href="css/style.css" />
 
     <script src="js/modernizr-2.6.2.min.js"></script>
     <script type="text/javascript">
@@ -22,6 +23,44 @@
             ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
             var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
         })();
+
+        /**
+         * 从 file 域获取 本地图片 url
+         */
+        function getFileUrl(sourceId) {
+            var url;
+            if (navigator.userAgent.indexOf("MSIE")>=1) { // IE
+                url = document.getElementById(sourceId).value;
+            } else if(navigator.userAgent.indexOf("Firefox")>0) { // Firefox
+                url = window.URL.createObjectURL(document.getElementById(sourceId).files.item(0));
+            } else if(navigator.userAgent.indexOf("Chrome")>0) { // Chrome
+                url = window.URL.createObjectURL(document.getElementById(sourceId).files.item(0));
+            }
+            return url;
+        }
+
+        /**
+         * 将本地图片 显示到浏览器上
+         */
+        function preImg(sourceId, targetId) {
+            var url = getFileUrl(sourceId);
+            var imgPre = document.getElementById(targetId);
+            imgPre.src = url;
+        }
+
+        $(".a-upload").on("change","input[type='file']",function(){
+            var filePath=$(this).val();
+            if(filePath.indexOf("jpg")!=-1 || filePath.indexOf("png")!=-1){
+                $(".fileerrorTip").html("").hide();
+                var arr=filePath.split('\\');
+                var fileName=arr[arr.length-1];
+                $(".showFileName").html(fileName);
+            }else{
+                $(".showFileName").html("");
+                $(".fileerrorTip").html("您未上传文件，或者您上传文件类型有误！").show();
+                return false
+            }
+        })
     </script>
 
 
@@ -69,44 +108,91 @@
 
                         <!--top three-->
                         <div class="col-sm-10">
+
                             <div class="form-left-top">
-                                <img src="resource/writing/pic.png" id="img-pic">
+                                <!--<div class="wysiwyg-controls">-->
+                                <!--<img src="resource/writing/pic.png" id="img-pic">-->
+                                <a href="#" class="file"><img src="resource/writing/pic.png" id="img-pic">
+                                    <input type="file" name="imgOne" id="imgOne" class="input-file" onchange="preImg(this.id,'imgPre');" />
+
+                                </a>
                                 <img src="resource/writing/save.png"  id="img-save">
                                 <img src="resource/writing/font.png" id="img-font">
+
+
+
+                                <a href='#' data-role='bold'>B</a>
+                                <a href='#' data-role='italic'>I</a>
+                                <a href='#' data-role='underline'>U</a>
+                                <a href='#' data-role='justifyleft'><i class="menu-left"></i></a>
+                                <a href='#' data-role='justifycenter'><i class="menu-center"></i></a>
+                                <a href='#' data-role='justifyright'><i class="menu-right"></i></a>
+                                <!--</div>-->
+
+
                             </div>
-
-                        </div>
-                        <!--publish-->
-                        <div class="col-sm-2 ">
-                            <div class="form-right-top">
-                                <div class="form-button">
-                                    <button type="submit" class="btn-publish">发布</button>
-                                </div>
+                            <div class="wysiwyg-content" contenteditable>
+                                <!--<div class="form-bottom">-->
+                                <b><h1>Let's make a statement!</h1></b>
+                                <br>
+                                <i>This is an italicised sentence.</i>
+                                <br>
+                                <u>Very important information.</u>
                             </div>
-
-                        </div>
-
-
-                </div>
-
-            </div>
-            <div class="row">
-                <div class="col-sm-8 col-sm-offset-2 form box">
-                        <div class="form-bottom">
-
-                                <textarea class="form-text" rows="10">我早就发现在我最严肃的时候，人们却总要发笑。实际上，等我过了一段时间重读自己当初用真诚的感情所写的那些段落时，我也忍不住想要笑我自己。这一定是因为真诚的感情本身有着某种荒唐可笑的地方……莫非因为人本来只是一个无足轻重的行星上的短暂居民，因此对于永恒的心灵而言，一个人一生的痛苦和奋斗只不过是个笑话而已。
-
-                                </textarea>
-                        </div>
-                    <div class="row" style="margin-top: -50px">
-                        <div class="col-sm-2 col-sm-offset-10" style="color: #6c757d">
-                            <p>-------yiner</p>
-                            <p>2017-12-03</p>
+                            <img id="imgPre" src="" width="100px" height="100px" alt="请插入图片" style="display: block;" />
+                            </div>
+                    <!--publish-->
+                    <div class="col-sm-2 ">
+                        <div class="form-right-top">
+                            <div class="form-button">
+                                <button type="submit" class="btn-publish">发布</button>
+                            </div>
                         </div>
                     </div>
 
                 </div>
+
+                </div>
             </div>
+            <!--<div class="row">-->
+                <!--<div class="col-sm-8 col-sm-offset-2 form box">-->
+                        <!--&lt;!&ndash;<div class="form-bottom">&ndash;&gt;-->
+
+                                <!--&lt;!&ndash;<textarea class="form-text" rows="10">我早就发现在我最严肃的时候，人们却总要发笑。实际上，等我过了一段时间重读自己当初用真诚的感情所写的那些段落时，我也忍不住想要笑我自己。这一定是因为真诚的感情本身有着某种荒唐可笑的地方……莫非因为人本来只是一个无足轻重的行星上的短暂居民，因此对于永恒的心灵而言，一个人一生的痛苦和奋斗只不过是个笑话而已。&ndash;&gt;-->
+
+                                <!--&lt;!&ndash;</textarea>&ndash;&gt;-->
+
+
+
+                            <!--&lt;!&ndash;<div class="wysiwyg-editor">&ndash;&gt;-->
+                                <!--&lt;!&ndash;<div class="wysiwyg-controls">&ndash;&gt;-->
+                                    <!--&lt;!&ndash;<a href='#' data-role='bold'>B</a>&ndash;&gt;-->
+                                    <!--&lt;!&ndash;<a href='#' data-role='italic'>I</a>&ndash;&gt;-->
+                                    <!--&lt;!&ndash;<a href='#' data-role='underline'>U</a>&ndash;&gt;-->
+                                    <!--&lt;!&ndash;<a href='#' data-role='justifyleft'><i class="menu-left"></i></a>&ndash;&gt;-->
+                                    <!--&lt;!&ndash;<a href='#' data-role='justifycenter'><i class="menu-center"></i></a>&ndash;&gt;-->
+                                    <!--&lt;!&ndash;<a href='#' data-role='justifyright'><i class="menu-right"></i></a>&ndash;&gt;-->
+                                <!--&lt;!&ndash;</div>&ndash;&gt;-->
+                                <!--&lt;!&ndash;<div class="wysiwyg-content" contenteditable>&ndash;&gt;-->
+                                    <!--&lt;!&ndash;<b><h1>Let's make a statement!</h1></b>&ndash;&gt;-->
+                                    <!--&lt;!&ndash;<br>&ndash;&gt;-->
+                                    <!--&lt;!&ndash;<i>This is an italicised sentence.</i>&ndash;&gt;-->
+                                    <!--&lt;!&ndash;<br>&ndash;&gt;-->
+                                    <!--&lt;!&ndash;<u>Very important information.</u>&ndash;&gt;-->
+                                <!--&lt;!&ndash;</div>&ndash;&gt;-->
+                            <!--&lt;!&ndash;</div>&ndash;&gt;-->
+
+                            <!--&lt;!&ndash;<img id="imgPre" src="" width="100px" height="100px" alt="请插入图片" style="display: block;" />&ndash;&gt;-->
+                        <!--&lt;!&ndash;</div>&ndash;&gt;-->
+                    <!--<div class="row" style="margin-top: -50px">-->
+                        <!--<div class="col-sm-2 col-sm-offset-10" style="color: #6c757d">-->
+                            <!--<p>-&#45;&#45;&#45;&#45;&#45;&#45;yiner</p>-->
+                            <!--<p>2017-12-03</p>-->
+                        <!--</div>-->
+                    <!--</div>-->
+
+                <!--</div>-->
+            <!--</div>-->
         </div>
     </div>
     <!--下方按钮-->
@@ -132,6 +218,10 @@
     <script src="js/homepageJS-1.js"></script>
 
 </body>
+<script src="js/prefixfree.min.js"></script>
+<script src='js/jquery.js'></script>
+
+<script src="js/index.js"></script>
 <script src="http://cdn.bootcss.com/jquery/1.11.2/jquery.min.js"></script>
 
 <script src="http://cdn.bootcss.com/bootstrap/3.3.4/js/bootstrap.min.js"></script>

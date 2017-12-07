@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>上传图片</title>
+    <script type="text/javascript" language="javascript">
+        function Preview() {
+            var fileList=document.getElementById("files-list");
+            EventUtil = document(fileList,"change",function (event) {
+                var info = " ",
+                    output = document.getElementById("output"),
+                    progress = document.getElementById("progress"),
+                    files = EventUtil.getTarget(event).files,
+                    type = "default",
+                    reader = new FileReader();
+                if(/image/.test(file[0].type)){
+                    reader.readAsDataURL(files[0]);
+                    type="image";
+                }else {
+                    reader.readAsText(files[0]);
+                    type="text";
+                }
+                reader.onerror = function () {
+                    output.innerHTML="Could not read file, error code is"+reader.error.code;
+                }
+                reader.onprogress=function (event) {
+                    if(event.lengthComputable){
+                        progress.innerHTML = event.loaded+"/"+event.total;
+                    }
+                }
+                reader.onload = function () {
+                    var html = " ";
+                    switch (type){
+                        case "image":
+                            html = "<img src=\""+reader.result+"\">";
+                            break;
+                        case "text":
+                            html = reader.result;
+                            break;
+                    }
+                    output.innerHTML = html;
+
+                }
+            })
+        }
+
+    </script>
+</head>
+<body>
+<input type="file" name="file" style="width: 200px; height: 20px;" onchange="Preview()" id="upload" />
+<div id="imgPreview" style="width:120px; height:100px;margin-left: 280px;">
+</div>
+
+</body>
+</html>
