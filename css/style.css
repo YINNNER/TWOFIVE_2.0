@@ -4,13 +4,10 @@ body{
 
 * {
   box-sizing: border-box;
+  position: static;
 }
 
-.wysiwyg-editor {
-  display: block;
-  width: 600px;
-  margin: 100px auto 0;
-}
+
 
 /*.wysiwyg-controls {*/
   /*display: block;*/
@@ -32,13 +29,15 @@ body{
   /*cursor: pointer;*/
   /*color: #adb5b9;*/
 /*}*/
-.wysiwyg-controls [data-role="bold"] {
+
+
+.form-left-top [data-role="bold"] {
   font-weight: bold;
 }
-.wysiwyg-controls [data-role="italic"] {
+.form-left-top [data-role="italic"] {
   font-style: italic;
 }
-.wysiwyg-controls [data-role="underline"] {
+.form-left-top [data-role="underline"] {
   text-decoration: underline;
 }
 
