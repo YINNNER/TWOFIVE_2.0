@@ -21,6 +21,7 @@ body {
     /*背景拉伸不重复*/
     background-repeat: no-repeat;
     background-size: cover;
+    background-attachment: fixed;
     color: #fff;
 }
 

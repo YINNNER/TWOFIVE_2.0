@@ -10,6 +10,7 @@ from django.forms import ModelForm
 # 用户数据库
 class User(AbstractUser):
     nickname=models.CharField(max_length=50,blank=True)
+    title=models.CharField(max_length=120,blank=True)
 
     class Meta(AbstractUser.Meta):
         pass
