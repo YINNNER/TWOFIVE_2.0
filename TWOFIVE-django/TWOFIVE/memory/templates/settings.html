@@ -26,35 +26,6 @@
     </script>
 
     <script>
-       {% comment %} $(document).ready(function () {
-             $('#save-form').submit(function(){
-                $.ajax({
-                    url:"{% url 'memory:user_setting' %}",
-                    data:$('#save-form').serialize(),
-                    dataType:"json",
-                    error:function(data){
-                        alert("hi");
-                    },
-                    success:function(data){
-                        alert(data);
-                    }
-                });
-             });
-
-            $("#save-btn").click(function () {
-                $.getJSON("{% url 'memory:user_setting' %}",function(data){
-                if(data.is_success=="success"){
-                    alert("设置成功！");
-                }
-                else{
-                    alert("设置失败，请重新设置！");
-                }
-
-
-            });
-            })
-        }){% endcomment %}
-
         //数据提交到后台但是不进行页面跳转的操作：
        //form标签增加一个onsubmit属性调用saveAction()函数，利用ajax提交而form自己不提交
         function saveAction() {
