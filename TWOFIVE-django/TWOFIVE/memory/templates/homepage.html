@@ -14,6 +14,7 @@
     <link rel="stylesheet" type="text/css" href="/static/css/memories.css" />
     <link rel="stylesheet" type="text/css" href="/static/css/trigger.css" />
     <link rel="stylesheet" type="text/css" href="/static/css/homepage-body.css" />
+    <link rel="stylesheet" type="text/css" href="/static/css/portrait.css" />
     <script src="/static/js/modernizr-2.6.2.min.js"></script>
     <script type="text/javascript" src="/static/js/homepageJS-2.js"></script>
 
@@ -79,7 +80,9 @@
         <div class="col-md-6 col-sm-offset-3">
             <div class='row'>
                 <div class="col-md-2" align="right">
-                    <image src="/static/resource/homepage/portrait.png"  id="head" ></image>
+                    <div id="portrait">
+                        <img  src="{{ request.user.portrait_url }}"  id="head" >
+                    </div>
                 </div>
                 <div class="col-md-10">
                     <h2 id="sign">" {{ request.user.title }} "</h2>

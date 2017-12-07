@@ -10,7 +10,7 @@ from django.http import JsonResponse
 import os
 import json
 from PIL import Image,ImageFile
-from TWOFIVE.settings import MEDIA_ROOT
+from TWOFIVE.settings import MEDIA_ROOT,MEDIA_URL
 ImageFile.LOAD_TRUNCATED_IMAGES = True
 # Create your views here.
 
@@ -109,28 +109,50 @@ def upload_file(request,filename):
         region=(width/2-minsize/2,height/2-minsize/2,width/2+minsize/2,height/2+minsize/2)
         cut_img=img.crop(region)
         cut_img.save(os.path.join(MEDIA_ROOT,request.user.username+'_portrait.png'),'png')
-
+        cut_url=os.path.join(MEDIA_URL,request.user.username+'_portrait.png')
+        request.user.portrait_url=cut_url
         destination.close()
-        return True
+        return cut_url
 
 
 def user_setting(request):
     if request.method=='POST':
-        if request.POST.get('nickname')!=request.user.nickname:
-            request.user.nickname=request.POST.get('nickname')
-        if request.POST.get('title') != request.user.title:
-            request.user.title=request.POST.get('title')
-        portrait=request.FILES.get('portrait')
-        request.user.save()
+        portrait = request.FILES.get('portrait')
+        portrait_url='not_portrait'
         if portrait != None:
-            isuploaded=upload_file(request,'portrait')
-            if isuploaded == True:
-                is_success={'is_success':'success'}
-                return HttpResponse(json.dumps(is_success), content_type='application/json')
-            else:
-                is_success = {'is_success': 'failure'}
-                return HttpResponse(json.dumps(is_success), content_type='application/json')
-        is_success={'is_success':'success'}
-        return JsonResponse(is_success)
+            portrait_url=upload_file(request,'portrait')
+        if not portrait_url:
+            is_success={'is_success':'portrait_failure'}
+            return JsonResponse(is_success)
+        # 修改昵称
+        is_nickname=False
+        if request.POST.get('nickname')!=request.user.nickname and request.POST.get('title')!='':
+            request.user.nickname=request.POST.get('nickname')
+            is_nickname=True
+
+        #修改个人简介
+        is_title=False
+        if request.POST.get('title') != request.user.title and request.POST.get('title')!='':
+            request.user.title=request.POST.get('title')
+            is_title=True
+
+        if is_nickname or is_title:
+            request.user.save()
+            is_success={'is_success':'success'}
+        else:
+            is_success={'is_success':'not_change'}
+
+        if not portrait_url:
+            result={
+                'is_success':is_success['is_success'],
+                'portrait_url':'not_change'
+            }
+            return JsonResponse(is_success)
+        else:
+            result={
+                'is_success':is_success['is_success'],
+                'portrait_url':portrait_url,
+            }
+            return JsonResponse(result)
 
 
