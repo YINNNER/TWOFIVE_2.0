@@ -1,7 +1,20 @@
+/*css for homepage.html*/
+
+@font-face
+{
+    font-family: Hiragino Sans GB;
+    src: url('../font/Hiragino Sans GB.ttc')
+}
+
 body{
     text-align: center;
     background-image: url("../resource/homepage/bg.png");
-    font-family: Helvetica, Arial, Hiragino Sans GB, "冬青黑体简体中文", "Microsoft YaHei", "微软雅黑", SimSun, "宋体", Heiti, "黑体", sans-serif;
+    /*背景拉伸不重复*/
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+    font-family: Helvetica, Arial, Hiragino Sans GB, "冬青黑体简体中文", Microsoft YaHei, "微软雅黑", SimSun, "宋体", Heiti, "黑体", sans-serif;
+
 }
 
 [class *= col-]{
@@ -22,7 +35,7 @@ body{
     width: 200px;
 }
 .inner-bg {
-    padding: 100px 0 0 0;
+    padding: 100px 0;
 }
 
 h1, h2 {

@@ -6,6 +6,10 @@ from django.contrib.auth.forms import UsernameField
 
 
 class RegisterForm(UserCreationForm):
+    password1=forms.CharField(widget=forms.PasswordInput(
+        attrs={'class': 'form-control', 'id': 'InputPassword2', 'placeholder': "请输入您的密码"}))
+    password2=forms.CharField(widget=forms.PasswordInput(
+        attrs={'class': 'form-control', 'id': 'InputPasswordRepeat', 'placeholder': "请再次输入您的密码"}))
     class Meta(UserCreationForm.Meta):
         model=User
         fields = ('username','email','nickname')
@@ -28,10 +32,10 @@ class LoginForm(AuthenticationForm):
              'name': 'login_username'
         })
     )
-    password = forms.PasswordInput(
+    password = forms.CharField(widget=forms.PasswordInput(
         attrs={
             'class':'form-control',
             'id':'InputPassword1',
             'placeholder':'请输入您的密码',
             'name':'login_password'}
-    )
+    ))
