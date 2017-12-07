@@ -9,7 +9,9 @@ from django.contrib.auth.decorators import login_required
 from django.http import JsonResponse
 import os
 import json
+from PIL import Image,ImageFile
 from TWOFIVE.settings import MEDIA_ROOT
+ImageFile.LOAD_TRUNCATED_IMAGES = True
 # Create your views here.
 
 def register(request):
@@ -96,12 +98,20 @@ def upload_file(request,filename):
         myFile=request.FILES.get(filename,None) #获取用户上传文件，若没有则为None
         if not myFile:
             return False
-        print MEDIA_ROOT
-        destination=open(os.path.join(MEDIA_ROOT,request.user.username+'_portrait.png'),'wb+')
+        pic_url=os.path.join(MEDIA_ROOT,request.user.username+'_por_pic.png')
+        destination=open(pic_url,'wb+')
         for chunk in myFile.chunks():
             destination.write(chunk)
-            destination.close()
-            return True
+        img=Image.open(pic_url)
+        width=img.size[0]
+        height=img.size[1]
+        minsize=width if width<height else height
+        region=(width/2-minsize/2,height/2-minsize/2,width/2+minsize/2,height/2+minsize/2)
+        cut_img=img.crop(region)
+        cut_img.save(os.path.join(MEDIA_ROOT,request.user.username+'_portrait.png'),'png')
+
+        destination.close()
+        return True
 
 
 def user_setting(request):
@@ -110,7 +120,7 @@ def user_setting(request):
             request.user.nickname=request.POST.get('nickname')
         if request.POST.get('title') != request.user.title:
             request.user.title=request.POST.get('title')
-        portrait=request.POST.get('portrait')
+        portrait=request.FILES.get('portrait')
         request.user.save()
         if portrait != '':
             isuploaded=upload_file(request,'portrait')
@@ -121,6 +131,6 @@ def user_setting(request):
                 is_success = {'is_success': 'failure'}
                 return HttpResponse(json.dumps(is_success), content_type='application/json')
         is_success={'is_success':'success'}
-        return HttpResponse(json.dumps(is_success), content_type='application/json')
+        return JsonResponse(is_success)
 
 
