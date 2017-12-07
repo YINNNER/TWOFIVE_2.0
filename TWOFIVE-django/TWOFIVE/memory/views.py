@@ -76,6 +76,9 @@ def browsing(request):
 def album(request):
     return render(request,'album.html')
 
+def settings(request):
+    return render(request,'settings.html')
+
 def logout_view(request):
     logout(request)
     return render_to_response('registration/login.html')

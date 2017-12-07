@@ -9,5 +9,6 @@ urlpatterns = [
     url(r'^publish/$',views.publish,name='publish'),
     url(r'^browsing/$',views.browsing,name='browsing'),
     url(r'^album/$',views.album,name='album'),
+    url(r'^settings/$',views.settings,name='settings'),
     url(r'^ajax_name/$',views.ajax_name,name='ajax_name'),
 ]
