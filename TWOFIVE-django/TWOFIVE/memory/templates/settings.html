@@ -64,7 +64,8 @@
     <div class="container">
         <div class="row" id="row1">
             <div class="col-md-6 col-xs-4 col-xs-offset-2 col-md-offset-3">
-                <form action="">
+                <form enctype="multipart/form-data" action="{% url 'memory:user_setting' %}" method="post">
+                    {% csrf_token %}
                     <ul class="list-group" id="listgroup">
                       <li>
                           <img src="/static/resource/homepage/portrait.png"  id="head" >
@@ -75,11 +76,11 @@
                       </li>
                       <li>
                           昵称
-                          <input type="text">
+                          <input type="text" name="nickname">
                       </li>
                       <li>
                           个人简介
-                          <textarea></textarea>
+                          <textarea name="title"></textarea>
                       </li>
                       <li>
                           打包下载所有文章
@@ -87,6 +88,9 @@
                               <input class="form_button" type="file" name="portrait">
                               打包下载
                           </a>
+                      </li>
+                      <li>
+                          <input type="submit" value="提交">
                       </li>
                     </ul>
                 </form>

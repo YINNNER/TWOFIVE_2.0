@@ -1,7 +1,7 @@
 from django.conf.urls import url,include
 from django.views import static
-from . import views
 from TWOFIVE import settings
+from . import views
 
 urlpatterns = [
     url(r'^homepage/$', views.homepage,name='homepage'),
