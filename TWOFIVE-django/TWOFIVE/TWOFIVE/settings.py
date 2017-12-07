@@ -141,5 +141,5 @@ HAYSTACK_CONNECTIONS={
 }
 
 # 存储用户上传文件的绝对路径
-MEDIA_URL='/media/'
+MEDIA_URL='/memory/media/'
 MEDIA_ROOT=os.path.join(BASE_DIR,'media')

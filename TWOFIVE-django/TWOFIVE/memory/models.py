@@ -11,6 +11,7 @@ from django.forms import ModelForm
 class User(AbstractUser):
     nickname=models.CharField(max_length=50,blank=True)
     title=models.CharField(max_length=120,blank=True)
+    portrait_url=models.CharField(max_length=200,blank=True)
 
     class Meta(AbstractUser.Meta):
         pass

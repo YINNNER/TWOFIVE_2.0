@@ -12,6 +12,7 @@
     <link rel="stylesheet" type="text/css" href="/static/css/navigation-bar.css" />
     <link rel="stylesheet" type="text/css" href="/static/css/menu-button.css" />
     <link rel="stylesheet" type="text/css" href="/static/css/settings.css" />
+     <link rel="stylesheet" type="text/css" href="/static/css/portrait.css" />
     <script src="/static/js/jquery.form.min.js"></script>
     <script src="/static/js/modernizr-2.6.2.min.js"></script>
     <script type="text/javascript">
@@ -31,10 +32,20 @@
         function saveAction() {
             $("#save-form").ajaxSubmit(function (data) {
                 if(data.is_success=="success"){
+                    if (data.portrait_url!="not_portrait"){
+                        $("#head").attr("src",data.portrait_url)
+                    }
+                    else{
+                        $("#head").attr("src","{{ request.user.portrait_url }}")
+                    }
                     alert("设置成功！");
+
                 }
-                else{
-                    alert("设置失败，请重新设置！");
+                else if(data.is_success=="portrait_failure"){
+                    alert("头像上传失败，请重试！");
+                }
+                else if(data.is_success=="not_change"){
+                    alert("您未做任何更改！")
                 }
             })
 
@@ -88,8 +99,8 @@
                       <div class="form-group row">
                           <div class="col-sm-2" >
                              <div id="portrait">
-                              <img  src="/static/resource/homepage/protrait.jpg"  id="head" >
-                          </div>
+                              <img  src="{{ request.user.portrait_url }}"  id="head" >
+                             </div>
                           </div>
                           <a class="btn-publish col-sm-2 col-sm-offset-2">
                               <input class="form_button" id="set-portrait" type="file" name="portrait">
