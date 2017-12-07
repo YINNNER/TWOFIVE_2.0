@@ -9,7 +9,7 @@ from django.contrib.auth.decorators import login_required
 from django.http import JsonResponse
 import os
 import json
-from TWOFIVE import settings
+from TWOFIVE.settings import MEDIA_ROOT
 # Create your views here.
 
 def register(request):
@@ -96,7 +96,8 @@ def upload_file(request,filename):
         myFile=request.FILES.get(filename,None) #获取用户上传文件，若没有则为None
         if not myFile:
             return False
-        destination=open(os.path.join('/Users/yiner/WebstormProjects/TWOFIVE_2.0/TWOFIVE-django/TWOFIVE/media',myFile.name),'wb+')
+        print MEDIA_ROOT
+        destination=open(os.path.join(MEDIA_ROOT,request.user.username+'_portrait.png'),'wb+')
         for chunk in myFile.chunks():
             destination.write(chunk)
             destination.close()
@@ -105,15 +106,21 @@ def upload_file(request,filename):
 
 def user_setting(request):
     if request.method=='POST':
-        nickname=request.POST.get('nickname')
-        title=request.POST.get('title')
-        portrait='portrait'
-        isuploaded=upload_file(request,portrait)
-    if isuploaded == True:
+        if request.POST.get('nickname')!=request.user.nickname:
+            request.user.nickname=request.POST.get('nickname')
+        if request.POST.get('title') != request.user.title:
+            request.user.title=request.POST.get('title')
+        portrait=request.POST.get('portrait')
+        request.user.save()
+        if portrait != '':
+            isuploaded=upload_file(request,'portrait')
+            if isuploaded == True:
+                is_success={'is_success':'success'}
+                return HttpResponse(json.dumps(is_success), content_type='application/json')
+            else:
+                is_success = {'is_success': 'failure'}
+                return HttpResponse(json.dumps(is_success), content_type='application/json')
         is_success={'is_success':'success'}
-        return HttpResponse(json.dumps(is_success), content_type='application/json')
-    else:
-        is_success = {'is_success': 'failure'}
         return HttpResponse(json.dumps(is_success), content_type='application/json')
 
 
