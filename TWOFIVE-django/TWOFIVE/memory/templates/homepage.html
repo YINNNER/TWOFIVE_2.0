@@ -82,11 +82,11 @@
                     <image src="/static/resource/homepage/portrait.png"  id="head" ></image>
                 </div>
                 <div class="col-md-10">
-                    <h2 id="sign">{{ request.user.title }}</h2>
+                    <h2 id="sign">" {{ request.user.title }} "</h2>
                     <script>
                         $(document).ready(function () {
                             $.getJSON("{% url 'memory:ajax_name' %}",function(data){
-                                $("#sign").append(data.name);
+                                //$("#sign").append(data.name);
 
                             });
 

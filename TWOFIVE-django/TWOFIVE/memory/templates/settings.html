@@ -6,12 +6,13 @@
     <meta name="viewport" content="width=device-width, initial-scale=1">
 
     <title>想当年</title>
-
+    <script src="http://cdn.bootcss.com/jquery/1.11.2/jquery.min.js"></script>
+    <script src="http://cdn.bootcss.com/bootstrap/3.3.4/js/bootstrap.min.js"></script>
     <link rel="stylesheet" href="http://cdn.bootcss.com/bootstrap/3.3.4/css/bootstrap.min.css">
     <link rel="stylesheet" type="text/css" href="/static/css/navigation-bar.css" />
     <link rel="stylesheet" type="text/css" href="/static/css/menu-button.css" />
     <link rel="stylesheet" type="text/css" href="/static/css/settings.css" />
-
+    <script src="/static/js/jquery.form.min.js"></script>
     <script src="/static/js/modernizr-2.6.2.min.js"></script>
     <script type="text/javascript">
         var _gaq = _gaq || [];
@@ -22,6 +23,52 @@
             ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
             var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
         })();
+    </script>
+
+    <script>
+       {% comment %} $(document).ready(function () {
+             $('#save-form').submit(function(){
+                $.ajax({
+                    url:"{% url 'memory:user_setting' %}",
+                    data:$('#save-form').serialize(),
+                    dataType:"json",
+                    error:function(data){
+                        alert("hi");
+                    },
+                    success:function(data){
+                        alert(data);
+                    }
+                });
+             });
+
+            $("#save-btn").click(function () {
+                $.getJSON("{% url 'memory:user_setting' %}",function(data){
+                if(data.is_success=="success"){
+                    alert("设置成功！");
+                }
+                else{
+                    alert("设置失败，请重新设置！");
+                }
+
+
+            });
+            })
+        }){% endcomment %}
+
+        //数据提交到后台但是不进行页面跳转的操作：
+       //form标签增加一个onsubmit属性调用saveAction()函数，利用ajax提交而form自己不提交
+        function saveAction() {
+            $("#save-form").ajaxSubmit(function (data) {
+                if(data.is_success=="success"){
+                    alert("设置成功！");
+                }
+                else{
+                    alert("设置失败，请重新设置！");
+                }
+            })
+
+            return false;//必须返回false，否则表单自己再做一次提交操作并且页面跳转
+        }
     </script>
 
 
@@ -63,8 +110,8 @@
     <!--正文编辑处-->
     <div class="container">
         <div class="row" id="row1">
-            <div class="col-md-6 col-xs-4 col-xs-offset-2 col-md-offset-3">
-                <form enctype="multipart/form-data" action="{% url 'memory:user_setting' %}" method="post">
+            <div class="col-md-6 col-xs-4 col-xs-offset-2 col-md-offset-3" id="content-part">
+                <form enctype="multipart/form-data" action="{% url 'memory:user_setting' %}" method="post" id="save-form" onsubmit="return saveAction();">
                     {% csrf_token %}
                     <div id="listgroup">
                       <div class="form-group row">
@@ -87,15 +134,15 @@
                           <textarea class="form-control col-sm-2 col-sm-offset-2" id="title" name="title" placeholder={{ request.user.title }}></textarea>
                       </div>
                       <div class="form-group row">
-                          <label for="download" class="col-sm-3">打包下载所有文章</label>
-                          <a class="btn-publish col-sm-2 col-sm-offset-1">
+                          <label for="download" class="col-sm-4">打包下载所有文章</label>
+                          <a class="btn-publish col-sm-2">
                               <input class="form_button" id="download" type="file" name="portrait">
                               打包下载
                           </a>
                       </div>
                       <div class="form-group row">
                           <a class="btn-publish col-sm-2 col-sm-offset-4">
-                              <input class="form_button" type="submit">
+                              <input class="form_button" type="submit" id="save-btn">
                               保存设置
                           </a>
 
@@ -130,7 +177,5 @@
     <script src="/static/js/homepageJS-1.js"></script>
 
 </body>
-<script src="http://cdn.bootcss.com/jquery/1.11.2/jquery.min.js"></script>
 
-<script src="http://cdn.bootcss.com/bootstrap/3.3.4/js/bootstrap.min.js"></script>
 </html>
