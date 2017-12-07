@@ -9,7 +9,7 @@ from django.contrib.auth.decorators import login_required
 from django.http import JsonResponse
 import os
 import json
-from TWOFIVE import settings
+from TWOFIVE.settings import MEDIA_ROOT
 # Create your views here.
 
 def register(request):
@@ -96,7 +96,8 @@ def upload_file(request,filename):
         myFile=request.FILES.get(filename,None) #获取用户上传文件，若没有则为None
         if not myFile:
             return False
-        destination=open(os.path.join('/Users/yiner/WebstormProjects/TWOFIVE_2.0/TWOFIVE-django/TWOFIVE/media',myFile.name),'wb+')
+        print MEDIA_ROOT
+        destination=open(os.path.join(MEDIA_ROOT,myFile.name),'wb+')
         for chunk in myFile.chunks():
             destination.write(chunk)
             destination.close()
