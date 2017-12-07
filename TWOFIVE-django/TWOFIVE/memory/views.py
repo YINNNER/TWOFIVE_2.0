@@ -122,7 +122,7 @@ def user_setting(request):
             request.user.title=request.POST.get('title')
         portrait=request.FILES.get('portrait')
         request.user.save()
-        if portrait != '':
+        if portrait != None:
             isuploaded=upload_file(request,'portrait')
             if isuploaded == True:
                 is_success={'is_success':'success'}

@@ -26,7 +26,7 @@
     </script>
 
     <script>
-        $(document).ready(function () {
+       {% comment %} $(document).ready(function () {
              $('#save-form').submit(function(){
                 $.ajax({
                     url:"{% url 'memory:user_setting' %}",
@@ -41,7 +41,7 @@
                 });
              });
 
-            {% comment %}$("#save-btn").click(function () {
+            $("#save-btn").click(function () {
                 $.getJSON("{% url 'memory:user_setting' %}",function(data){
                 if(data.is_success=="success"){
                     alert("设置成功！");
@@ -52,11 +52,13 @@
 
 
             });
-            }){% endcomment %}
-        })
+            })
+        }){% endcomment %}
 
-        {% comment %}function saveAction() {
-            $("#save-form").ajaxForm(function (data) {
+        //数据提交到后台但是不进行页面跳转的操作：
+       //form标签增加一个onsubmit属性调用saveAction()函数，利用ajax提交而form自己不提交
+        function saveAction() {
+            $("#save-form").ajaxSubmit(function (data) {
                 if(data.is_success=="success"){
                     alert("设置成功！");
                 }
@@ -65,7 +67,8 @@
                 }
             })
 
-        }{% endcomment %}
+            return false;//必须返回false，否则表单自己再做一次提交操作并且页面跳转
+        }
     </script>
 
 
