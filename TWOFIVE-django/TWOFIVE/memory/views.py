@@ -19,6 +19,7 @@ def register(request):
     if (request.method == 'POST'):
         form = RegisterForm(request.POST)
         if form.is_valid():
+            # form.portrait_url=os.path.join(MEDIA_URL,'default.png')
             form.save()
             form=RegisterForm()
     else:
