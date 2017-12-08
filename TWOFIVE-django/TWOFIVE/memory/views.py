@@ -69,9 +69,10 @@ def writing(request):
 # 发布
 @login_required
 def publish(request):
-    if request.method == 'POST':
-        text=request.POST.get('text')
-    return redirect('/memory/homepage')
+    if request.is_ajax():
+        text=request.GET.get('data')
+    is_success={'is_success':'success'}
+    return JsonResponse(is_success)
 
 @login_required
 def browsing(request):
