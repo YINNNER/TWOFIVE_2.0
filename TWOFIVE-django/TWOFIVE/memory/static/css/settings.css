@@ -21,6 +21,9 @@ a.btn-publish {
     position: absolute;
     top: 50%;
     transform: translateY(-50%);
+    background-image: url("../resource/settings/gou.png");
+
+
 
     text-align: center;
     font-size: small;
@@ -60,9 +63,40 @@ a.btn-publish:focus {
     background: #d1431f;
     color: #eeeeee; }
 
+a.btn-save{
+      /*垂直居中，父元素须设置为relative*/
+    position: absolute;
+    top: 50%;
+    background-image: url("../resource/settings/gou2.png");
+    background-size:cover ;
+    text-align: center;
+    font-size: small;
+    width: 50px;
+    height: 50px;
+    margin-top: 15px;
+    vertical-align: middle;
+    opacity: 1;
+    border: 0;
+    border-radius: 17px;
+    color: #f1f1f1;
+    -moz-border-radius: 17px;
+    -webkit-border-radius: 17px;
+    -o-transition: all .3s; -moz-transition: all .3s; -webkit-transition: all .3s; -ms-transition: all .3s; transition: all .3s;
 
+}
+#label_name{
+    text-align: right;
+}
+#port{
+    margin-top: -70px;
+}
+
+label{
+    text-align: right;
+}
 
 .form_button{
+
     cursor: pointer;
     position: absolute;
     top:0;

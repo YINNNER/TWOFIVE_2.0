@@ -122,18 +122,20 @@ def user_setting(request):
         portrait_url='not_portrait'
         if portrait != None:
             portrait_url=upload_file(request,'portrait')
+            request.user.portrait_url=portrait_url
+            request.user.save()
         if not portrait_url:
             is_success={'is_success':'portrait_failure'}
             return JsonResponse(is_success)
         # 修改昵称
         is_nickname=False
-        if request.POST.get('nickname')!=request.user.nickname and request.POST.get('title')!='':
+        if request.POST.get('title')!='':
             request.user.nickname=request.POST.get('nickname')
             is_nickname=True
 
         #修改个人简介
         is_title=False
-        if request.POST.get('title') != request.user.title and request.POST.get('title')!='':
+        if request.POST.get('title')!='':
             request.user.title=request.POST.get('title')
             is_title=True
 
@@ -151,7 +153,7 @@ def user_setting(request):
             return JsonResponse(is_success)
         else:
             result={
-                'is_success':is_success['is_success'],
+                'is_success':'success',
                 'portrait_url':portrait_url,
             }
             return JsonResponse(result)
