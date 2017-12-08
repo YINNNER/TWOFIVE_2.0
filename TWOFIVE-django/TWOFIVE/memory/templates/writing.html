@@ -13,6 +13,13 @@
     <link rel="stylesheet" type="text/css" href="/static/css/writing.css" />
     <link rel="stylesheet" type="text/css" href="/static/css/style.css" />
 
+    <script src="/static/js/prefixfree.min.js"></script>
+    <script src='/static/js/jquery.js'></script>
+     <script src="/static/js/jquery.form.min.js"></script>
+    <script src="/static/js/index.js"></script>
+    <script src="http://cdn.bootcss.com/jquery/1.11.2/jquery.min.js"></script>
+
+    <script src="http://cdn.bootcss.com/bootstrap/3.3.4/js/bootstrap.min.js"></script>
     <script src="/static/js/modernizr-2.6.2.min.js"></script>
     <script type="text/javascript">
         var _gaq = _gaq || [];
@@ -103,7 +110,7 @@
     <div class="container">
         <div class="inner-bg">
             <!--tool bar-->
-            <form action="{% url 'memory:publish' %}" method="post">
+{#            <form action="{% url 'memory:publish' %}" method="post">#}
                 <div class="row">
                     <div class="col-sm-8 col-sm-offset-2 form-box">
 
@@ -137,40 +144,57 @@
                                         <u>Very important information.</u>
                                         <img id="imgPre" src="" width="100px" height="100px" alt="请插入图片" style="display: block;" />
                                     </div>
+                                {% csrf_token %}
                                 <script>
-                                $("#publisher").click(function () {
-                                    var data=$("#publish-content").html();
-                                        $.post(url,data,function () {
+                                    $(document).ready(function () {
+                                         $("#publisher").click(function () {
+                                        var data=$("#publish-content").html();
+                                        var data_json={'data':data};
+                                        $.ajax({
+                                            type: 'GET',
+                                            url:"{% url 'memory:publish' %}",
+                                            dataType: 'json',
+                                            data:data_json,
+                                            success: function( result ){
+                                                if(result.is_success=="success"){
+                                                    alert("发布成功！");
+{#                                                    return true;#}
+                                                    window.location.href="{% url 'memory:homepage' %}";
+                                                 }
+                                                else{
+                                                    alert("发布失败");
+                                                    return false;
+                                                }
 
-                                        if(data.is_success=="success"){
-                                            alert("发布成功！");
-                                            return true;
-                                        }
-                                        else{
-                                            alert("发布失败")
-                                            return false;
-                                            }
+                                            },
 
-                                 })
+                                        });
+                                    });
+                                    })
 
-                                })
-                            </script>
+
+
+
+
+
+
+                                </script>
 
                             </div>
                             <!--publish-->
 
-                            {% csrf_token %}
+
                                 <div class="col-sm-2 ">
                                     <div class="form-right-top">
                                         <div class="form-button">
-                                            <button type="submit" class="btn-publish" id="publisher">发布</button>
+                                            <button  type="button" class="btn-publish" id="publisher">发布</button>
                                         </div>
                                     </div>
                                 </div>
 
                     </div>
                 </div>
-            </form>
+{#            </form>#}
         </div>
     </div>
     <!--下方按钮-->
@@ -196,11 +220,5 @@
     <script src="/static/js/homepageJS-1.js"></script>
 
 </body>
-<script src="/static/js/prefixfree.min.js"></script>
-<script src='/static/js/jquery.js'></script>
 
-<script src="/static/js/index.js"></script>
-<script src="http://cdn.bootcss.com/jquery/1.11.2/jquery.min.js"></script>
-
-<script src="http://cdn.bootcss.com/bootstrap/3.3.4/js/bootstrap.min.js"></script>
 </html>
