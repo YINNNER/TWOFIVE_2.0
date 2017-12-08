@@ -64,6 +64,14 @@ h1, h2 {
     text-align: left;
 }
 /*输入框部分*/
+
+#board{
+    --webkit-box-shadow: 4px 4px 4px 2px rgba(0, 0, 0, 0.2) ;
+    box-shadow: 4px 4px 4px 2px rgba(0, 0, 0, 0.2);
+    border-radius: 8px;
+
+}
+
 .form-bottom {
     padding: 5px 80px 30px 40px;
     height: 230px;
