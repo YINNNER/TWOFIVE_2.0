@@ -39,7 +39,6 @@ INSTALLED_APPS = [
     'django.contrib.messages',
     'django.contrib.staticfiles',
     'memory',
-    # 'haystack'
 ]
 
 MIDDLEWARE = [
@@ -133,12 +132,6 @@ LOGOUT_REDIRECT_URL='/memory/homepage'
 LOGIN_REDIRECT_URL='/memory/homepage'
 LOGIN_URL='/memory/login'
 
-HAYSTACK_CONNECTIONS={
-    'default':{
-        'ENGINE':'haystack.backends.whoosh_backend.WhooshEngine',
-        'PATH':os.path.join(BASE_DIR,'whoosh_index'),
-    },
-}
 
 # 存储用户上传文件的绝对路径
 MEDIA_URL='/memory/media/'

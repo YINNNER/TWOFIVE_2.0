@@ -127,7 +127,7 @@
                                     </div>
                                 </div>
 
-                                    <div class="wysiwyg-content" contenteditable>
+                                    <div class="wysiwyg-content" id="publish-content" contenteditable>
                                         <!--<div class="form-bottom">-->
                                         <br>
                                         <b><h1>Let's make a statement!</h1></b>
@@ -137,6 +137,24 @@
                                         <u>Very important information.</u>
                                         <img id="imgPre" src="" width="100px" height="100px" alt="请插入图片" style="display: block;" />
                                     </div>
+                                <script>
+                                $("#publisher").click(function () {
+                                    var data=$("#publish-content").html();
+                                        $.post(url,data,function () {
+
+                                        if(data.is_success=="success"){
+                                            alert("发布成功！");
+                                            return true;
+                                        }
+                                        else{
+                                            alert("发布失败")
+                                            return false;
+                                            }
+
+                                 })
+
+                                })
+                            </script>
 
                             </div>
                             <!--publish-->
@@ -145,7 +163,7 @@
                                 <div class="col-sm-2 ">
                                     <div class="form-right-top">
                                         <div class="form-button">
-                                            <button type="submit" class="btn-publish">发布</button>
+                                            <button type="submit" class="btn-publish" id="publisher">发布</button>
                                         </div>
                                     </div>
                                 </div>
