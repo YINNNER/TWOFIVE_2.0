@@ -39,6 +39,17 @@
         });
     </script>
 
+    <script>
+                        $(document).ready(function () {
+                            $.getJSON("{% url 'memory:ajax_name' %}",function(data){
+                                //$("#sign").append(data.name);
+
+                            });
+
+
+                        })
+                    </script>
+
 
 </head>
 <body>
@@ -79,23 +90,11 @@
 
         <div class="col-md-6 col-sm-offset-3">
             <div class='row'>
-                <div class="col-md-2" align="right">
+                <div class="center-bar">
                     <div id="portrait">
                         <img  src="{{ request.user.portrait_url }}"  id="head" >
                     </div>
-                </div>
-                <div class="col-md-10">
                     <h2 id="sign">" {{ request.user.title }} "</h2>
-                    <script>
-                        $(document).ready(function () {
-                            $.getJSON("{% url 'memory:ajax_name' %}",function(data){
-                                //$("#sign").append(data.name);
-
-                            });
-
-
-                        })
-                    </script>
                 </div>
             </div>
         </div>
