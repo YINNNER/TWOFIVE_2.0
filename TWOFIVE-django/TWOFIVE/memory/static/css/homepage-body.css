@@ -1,4 +1,13 @@
+@font-face
+{
+    font-family: Hiragino Sans GB;
+    src: url('../font/Hiragino Sans GB.ttc')
+}
 
+body{
+
+    font-family: Hiragino Sans GB,"冬青黑体简体中文",Helvetica, Arial, Microsoft YaHei, "微软雅黑", SimSun, "宋体", Heiti, "黑体", sans-serif!important;
+}
 #bar{
     background-image: url("../resource/homepage/infobar.png");
     background-repeat: no-repeat;
