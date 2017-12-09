@@ -4,7 +4,7 @@ body{
 
 * {
   box-sizing: border-box;
-  /*position: static;*/
+  position: static;
 }
 
 
@@ -62,7 +62,7 @@ body{
 }
 
 .wysiwyg-content {
-  margin-top: 30px!important;
+  margin-top: 33px!important;
   position: static;
   max-width: 120%;
   width: 120%;
