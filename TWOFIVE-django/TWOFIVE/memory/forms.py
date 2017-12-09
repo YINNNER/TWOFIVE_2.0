@@ -1,7 +1,8 @@
 # -*- coding: utf-8 -*-
 from django.contrib.auth.forms import UserCreationForm,AuthenticationForm
-from .models import User
+from .models import *
 from django import forms
+
 from django.contrib.auth.forms import UsernameField
 
 
@@ -39,3 +40,29 @@ class LoginForm(AuthenticationForm):
             'placeholder':'请输入您的密码',
             'name':'login_password'}
     ))
+
+class CommentForm(forms.Form):
+
+    name = forms.CharField(label='称呼', max_length=16, error_messages={
+            'required': '请填写您的称呼',
+            'max_length': '称呼太长咯'
+    })
+
+    content = forms.CharField(label='评论内容', error_messages={
+            'required': '请填写您的评论内容！',
+            'max_length': '评论内容太长咯'
+    })
+
+# class ArticleForm(forms.Form):
+#     title=forms.CharField(
+#          label='标题', max_length=244,error_messages={
+#             'required': '请填写标题',
+#             'max_length': '标题太长咯'
+#     })
+#     content=forms.CharField(
+#         widget=forms.Textarea
+#     )
+class ArticleForm(forms.ModelForm):
+    class Meta:
+        model = Article
+        fields = ('title','content')

@@ -1,8 +1,7 @@
 # -*- coding: utf-8 -*-
 from __future__ import unicode_literals
-
 from django.shortcuts import render,redirect,render_to_response
-from . forms import RegisterForm,LoginForm
+from .forms import *
 from django.contrib.auth import  authenticate,login,logout
 from django.http import HttpResponse
 from django.contrib.auth.decorators import login_required
@@ -12,6 +11,10 @@ import json
 from PIL import Image,ImageFile
 from TWOFIVE.settings import MEDIA_ROOT,MEDIA_URL
 ImageFile.LOAD_TRUNCATED_IMAGES = True
+
+from .models import *
+from django.http import Http404
+
 # Create your views here.
 
 def register(request):
@@ -160,3 +163,58 @@ def user_setting(request):
             return JsonResponse(result)
 
 
+
+
+
+# def get_articles(request):
+#     blogs = Article.objects.all().order_by('-update_time')
+#     return render_to_response('article_list.html',{'blogs':blogs})
+#
+#
+# def get_details(request,blog_id):
+#     try:
+#         article = Article.objects.get(id=blog_id)
+#     except Article.DoesNotExist:
+#         raise Http404
+#     if request.method == 'GET':
+#         form = CommentForm()
+#     else:
+#         form = CommentForm(request.POST)
+#         if form.is_valid():
+#             cleaned_data = form.cleaned_data
+#             cleaned_data['article'] = article
+#             Comment.objects.create(**cleaned_data)
+#     ctx = {
+#         'article':article,
+#         'comments':article.comment_set.all().order_by('-created'),
+#         'form':form
+#     }
+#    return render(request,'article-details.html',ctx)
+
+
+
+# def addArticle(request):
+#     if request.method == 'POST':
+#         article_form = ArticleForm(request.POST)
+#     if article_form.is_valid():
+#         cd = article_form.cleaned_data
+#         article=Article()
+#         article.title=cd['title']
+#         article.content=cd['content']
+#         article.save()
+#         return HttpResponseRedirect('/memory/homepage')
+#
+#     else:
+#         article_form = ArticleForm()
+#         return render_to_response('writing.html', {'form': article_form})
+def addArticle(request):
+    if request.method == 'POST':
+        article_form = ArticleForm(request.POST)
+    if article_form.is_valid():
+        print(article_form.cleaned_data)
+        article_form.save()
+        return redirect('/memory/homepage')
+
+    else:
+        article_form = ArticleForm()
+        return render(request, 'writing.html', {'article_form': article_form})

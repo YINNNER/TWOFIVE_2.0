@@ -116,10 +116,21 @@
     <div class="container">
         <div class="inner-bg">
             <!--tool bar-->
-{#            <form action="{% url 'memory:publish' %}" method="post">#}
+             {% if article_form.errors %}
+
+                <p style="color: red;">
+
+                Please correct the error{{ article_form.errors|pluralize }} below.
+
+                </p>
+
+             {% endif %}
+
+            <form action="{% url 'memory:addArticle' %}" method="post">
                 <div class="row">
                     <div class="col-sm-8 col-sm-offset-2 form-box">
 
+                            {% csrf_token %}
                             <!--top three-->
                             <div class="col-sm-10">
                                 <div class="form-left-top">
@@ -155,15 +166,15 @@
 
                                     <div class="wysiwyg-content" id="publish-content" contenteditable>
                                         <!--<div class="form-bottom">-->
-                                        <br>
-                                        <b><h1>Let's make a statement!</h1></b>
-                                        <br>
-                                        <i>This is an italicised sentence.</i>
-                                        <br>
-                                        <u>Very important information.</u>
-                                        <img id="imgPre" src="" width="100px" height="100px" alt=" " style="display: block;" />
+                                        <BR>
+
+                                                <table>{{ article_form.as_table}}</table>
+
+
+                                        <i style="align-self: flex-end">------{{ request.user.username }}</i>
+                                        <img id="imgPre" src="" width="100px" height="100px" alt="请插入图片" style="display: block;" />
                                     </div>
-                                {% csrf_token %}
+
                                 <script>
                                     $(document).ready(function () {
                                          $("#publisher").click(function () {
@@ -304,5 +315,11 @@
 		</script>
 
 </body>
+<script src="/static/js/prefixfree.min.js"></script>
+<script src='/static/js/jquery.js'></script>
 
+<script src="/static/js/index.js"></script>
+<script src="http://cdn.bootcss.com/jquery/1.11.2/jquery.min.js"></script>
+
+<script src="http://cdn.bootcss.com/bootstrap/3.3.4/js/bootstrap.min.js"></script>
 </html>

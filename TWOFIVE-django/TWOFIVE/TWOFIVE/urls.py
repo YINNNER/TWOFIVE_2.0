@@ -20,6 +20,5 @@ urlpatterns = [
     url(r'^admin/', admin.site.urls),
     url(r'^memory/', include('memory.urls', namespace='memory')),
     url(r'^memory/', include('django.contrib.auth.urls')),
-    # url(r'', include('blog.urls')),
 
 ]
