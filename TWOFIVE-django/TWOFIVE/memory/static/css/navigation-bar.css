@@ -19,18 +19,20 @@ a {
 }
 
 #nav{
+    height: 35px;
     background-color: #f6f6f6;
     opacity: 0.9;
     box-shadow: #DC552C;
-z-index: 2000;
+    z-index: 2000;
 }
 
-
-#nav .col-sm-1 #logoimg{
-    height: 30px;
-    padding-top: 5px;
+/*logo*/
+#nav #logoimg{
+    margin: 5px;
+    height: 25px;
 }
 
+/*more下拉菜单*/
 #moreimg{
     width:22px;
 
@@ -45,10 +47,10 @@ z-index: 2000;
 }
 
 .btn-default {
+    padding: 6px 0;
     color: #333;
     background-color: #f6f6f6;
     border:none;
-    /*float: right;*/
 }
 
 .btn-default.active, .btn-default.focus, .btn-default:active, .btn-default:focus, .btn-default:hover, .open>.dropdown-toggle.btn-default {
@@ -72,10 +74,17 @@ z-index: 2000;
      box-shadow: none;
      opacity: 0.8;
  }
+
+ /*下拉菜单设置*/
 .dropdown-menu {
+    min-width: 84px;
     border-top-right-radius: 0;
     border-top-left-radius: 0;
     border: none;
+}
+
+.dropdown-menu>li>a {
+    padding: 5px 15px;
 }
 
 .form-control {

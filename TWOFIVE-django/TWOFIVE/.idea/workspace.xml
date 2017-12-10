@@ -1,14 +1,616 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="866d91df-491a-4517-8ac2-67baa85cb42a" name="Default" comment="">
+    <list default="true" id="e17d9f27-ab2e-46d1-ad38-53d828a39363" name="Default" comment="">
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/db.sqlite3" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/media/1.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/media/In the mountains with stars.jpg" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/media/admin_por_pic.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/media/admin_portrait.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/media/default.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/media/pan_por_pic.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/media/pan_portrait.jpg" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/media/pan_portrait.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/media/protrait.jpg" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/memory/static/css/fonts/icomoon.eot" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/memory/static/css/fonts/icomoon.ttf" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/memory/static/css/fonts/icomoon.woff" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/memory/static/font/Hiragino Sans GB.ttc" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/memory/static/resource/album/IMG_0273.jpg" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/memory/static/resource/album/IMG_5533.jpg" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/memory/static/resource/album/IMG_5882.jpg" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/memory/static/resource/album/IMG_9162.jpg" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/memory/static/resource/album/YINER-3 2.jpg" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/memory/static/resource/album/album.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/memory/static/resource/album/recommend.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/memory/static/resource/album/recommend_selected.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/memory/static/resource/album/yiner-3.jpg" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/memory/static/resource/album/yiner-6.jpg" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/memory/static/resource/homepage/bg.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/memory/static/resource/homepage/button.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/memory/static/resource/homepage/homepage.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/memory/static/resource/homepage/homepage1.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/memory/static/resource/homepage/infobar.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/memory/static/resource/homepage/logo.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/memory/static/resource/homepage/magnifier.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/memory/static/resource/homepage/more.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/memory/static/resource/homepage/portrait.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/memory/static/resource/homepage/protrait.jpg" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/memory/static/resource/homepage/time_dot.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/memory/static/resource/homepage/timeline.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/memory/static/resource/login/bg.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/memory/static/resource/login/login.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/memory/static/resource/login/logo.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/memory/static/resource/recommend/bg.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/memory/static/resource/recommend/head-1.jpg" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/memory/static/resource/recommend/head-10.jpg" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/memory/static/resource/recommend/head-11.jpg" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/memory/static/resource/recommend/head-12.jpg" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/memory/static/resource/recommend/head-2.jpg" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/memory/static/resource/recommend/head-3.jpg" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/memory/static/resource/recommend/head-4.jpg" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/memory/static/resource/recommend/head-5.jpg" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/memory/static/resource/recommend/head-6.jpg" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/memory/static/resource/recommend/head-7.jpg" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/memory/static/resource/recommend/head-8.jpg" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/memory/static/resource/recommend/head-9.jpg" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/memory/static/resource/recommend/recommend.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/memory/static/resource/recommend/recommend_selected.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/memory/static/resource/settings/gou.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/memory/static/resource/settings/gou2.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/memory/static/resource/writing/font.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/memory/static/resource/writing/pic.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/memory/static/resource/writing/save.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/memory/static/resource/writing/writing.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/memory/static/resource/思维导图.jpg" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/memory/static/resource/追忆往昔.mindnode/QuickLook/Preview.jpg" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/static/admin/fonts/Roboto-Bold-webfont.woff" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/static/admin/fonts/Roboto-Light-webfont.woff" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/static/admin/fonts/Roboto-Regular-webfont.woff" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/static/font/Hiragino Sans GB.ttc" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/static/resource/album/IMG_0273.jpg" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/static/resource/album/IMG_5533.jpg" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/static/resource/album/IMG_5882.jpg" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/static/resource/album/IMG_9162.jpg" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/static/resource/album/YINER-3 2.jpg" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/static/resource/album/album.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/static/resource/album/recommend.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/static/resource/album/recommend_selected.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/static/resource/album/yiner-3.jpg" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/static/resource/album/yiner-6.jpg" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/static/resource/homepage/bg.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/static/resource/homepage/button.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/static/resource/homepage/homepage.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/static/resource/homepage/homepage1.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/static/resource/homepage/infobar.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/static/resource/homepage/logo.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/static/resource/homepage/magnifier.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/static/resource/homepage/more.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/static/resource/homepage/portrait.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/static/resource/homepage/protrait.jpg" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/static/resource/homepage/time_dot.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/static/resource/homepage/timeline.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/static/resource/login/bg.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/static/resource/login/login.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/static/resource/login/logo.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/static/resource/recommend/bg.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/static/resource/recommend/head-1.jpg" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/static/resource/recommend/head-10.jpg" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/static/resource/recommend/head-11.jpg" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/static/resource/recommend/head-12.jpg" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/static/resource/recommend/head-2.jpg" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/static/resource/recommend/head-3.jpg" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/static/resource/recommend/head-4.jpg" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/static/resource/recommend/head-5.jpg" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/static/resource/recommend/head-6.jpg" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/static/resource/recommend/head-7.jpg" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/static/resource/recommend/head-8.jpg" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/static/resource/recommend/head-9.jpg" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/static/resource/recommend/recommend.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/static/resource/recommend/recommend_selected.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/static/resource/writing/font.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/static/resource/writing/pic.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/static/resource/writing/save.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/static/resource/writing/writing.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/static/resource/思维导图.jpg" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/static/resource/追忆往昔.mindnode/QuickLook/Preview.jpg" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/TWOFIVE/__init__.py" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/TWOFIVE/settings.py" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/TWOFIVE/urls.py" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/TWOFIVE/wsgi.py" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/manage.py" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/memory/__init__.py" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/memory/admin.py" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/memory/apps.py" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/memory/forms.py" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/memory/migrations/0001_initial.py" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/memory/migrations/0002_user_title.py" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/memory/migrations/0003_user_portrait_url.py" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/memory/migrations/0004_auto_20171208_1204.py" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/memory/migrations/0005_auto_20171208_1426.py" />
       <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/memory/migrations/0006_comment.py" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/memory/migrations/0007_auto_20171209_0148.py" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/memory/migrations/0008_auto_20171209_0149.py" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/memory/migrations/0009_article_score.py" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/memory/migrations/__init__.py" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/memory/models.py" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/memory/static/css/album-body.css" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/memory/static/css/bootstrap-grid.css" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/memory/static/css/bootstrap-grid.css.map" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/memory/static/css/bootstrap-grid.min.css" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/memory/static/css/bootstrap-grid.min.css.map" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/memory/static/css/bootstrap-reboot.css" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/memory/static/css/bootstrap-reboot.css.map" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/memory/static/css/bootstrap-reboot.min.css" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/memory/static/css/bootstrap-reboot.min.css.map" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/memory/static/css/bootstrap.css" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/memory/static/css/bootstrap.css.map" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/memory/static/css/bootstrap.min.css" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/memory/static/css/bootstrap.min.css.map" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/memory/static/css/browse-1.css" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/memory/static/css/browse-2.css" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/memory/static/css/browse-3.css" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/memory/static/css/common.css" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/memory/static/css/demo.css" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/memory/static/css/fonts/icomoon.svg" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/memory/static/css/form-elements.css" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/memory/static/css/homepage-body.css" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/memory/static/css/homepageCSS-1.css" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/memory/static/css/homepageCSS-2.css" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/memory/static/css/icons.css" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/memory/static/css/memories.css" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/memory/static/css/menu-button.css" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/memory/static/css/myStyle.css" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/memory/static/css/navigation-bar.css" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/memory/static/css/portrait.css" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/memory/static/css/settings.css" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/memory/static/css/style.css" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/memory/static/css/style4.css" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/memory/static/css/timeline.css" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/memory/static/css/trigger.css" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/memory/static/css/writing.css" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/memory/static/js/bootstrap.bundle.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/memory/static/js/bootstrap.bundle.js.map" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/memory/static/js/bootstrap.bundle.min.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/memory/static/js/bootstrap.bundle.min.js.map" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/memory/static/js/bootstrap.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/memory/static/js/bootstrap.js.map" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/memory/static/js/bootstrap.min.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/memory/static/js/bootstrap.min.js.map" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/memory/static/js/classie.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/memory/static/js/homepageJS-1.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/memory/static/js/homepageJS-2.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/memory/static/js/index.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/memory/static/js/jquery.dropdown.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/memory/static/js/jquery.form.min.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/memory/static/js/jquery.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/memory/static/js/modalEffects.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/memory/static/js/modernizr-2.6.2.min.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/memory/static/js/modernizr.custom.63321.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/memory/static/js/polyfills.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/memory/static/js/prefixfree.min.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/memory/static/resource/info.txt" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/memory/templates/album.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/memory/templates/browsing.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/memory/templates/homepage.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/memory/templates/registration/login.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/memory/templates/settings.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/memory/templates/writing.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/memory/tests.py" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/memory/urls.py" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/memory/views.py" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/requirements.txt" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/static/admin/css/base.css" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/static/admin/css/changelists.css" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/static/admin/css/dashboard.css" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/static/admin/css/fonts.css" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/static/admin/css/forms.css" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/static/admin/css/login.css" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/static/admin/css/rtl.css" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/static/admin/css/widgets.css" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/static/admin/fonts/LICENSE.txt" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/static/admin/fonts/README.txt" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/static/admin/img/LICENSE" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/static/admin/img/README.txt" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/static/admin/img/calendar-icons.svg" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/static/admin/img/gis/move_vertex_off.svg" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/static/admin/img/gis/move_vertex_on.svg" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/static/admin/img/icon-addlink.svg" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/static/admin/img/icon-alert.svg" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/static/admin/img/icon-calendar.svg" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/static/admin/img/icon-changelink.svg" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/static/admin/img/icon-clock.svg" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/static/admin/img/icon-deletelink.svg" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/static/admin/img/icon-no.svg" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/static/admin/img/icon-unknown-alt.svg" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/static/admin/img/icon-unknown.svg" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/static/admin/img/icon-yes.svg" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/static/admin/img/inline-delete.svg" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/static/admin/img/search.svg" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/static/admin/img/selector-icons.svg" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/static/admin/img/sorting-icons.svg" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/static/admin/img/tooltag-add.svg" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/static/admin/img/tooltag-arrowright.svg" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/static/admin/js/SelectBox.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/static/admin/js/SelectFilter2.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/static/admin/js/actions.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/static/admin/js/actions.min.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/static/admin/js/admin/DateTimeShortcuts.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/static/admin/js/admin/RelatedObjectLookups.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/static/admin/js/calendar.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/static/admin/js/cancel.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/static/admin/js/change_form.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/static/admin/js/collapse.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/static/admin/js/collapse.min.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/static/admin/js/core.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/static/admin/js/inlines.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/static/admin/js/inlines.min.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/static/admin/js/jquery.init.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/static/admin/js/popup_response.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/static/admin/js/prepopulate.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/static/admin/js/prepopulate.min.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/static/admin/js/prepopulate_init.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/static/admin/js/timeparse.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/static/admin/js/urlify.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/static/admin/js/vendor/jquery/LICENSE-JQUERY.txt" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/static/admin/js/vendor/jquery/jquery.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/static/admin/js/vendor/jquery/jquery.min.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/static/admin/js/vendor/xregexp/LICENSE-XREGEXP.txt" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/static/admin/js/vendor/xregexp/xregexp.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/static/admin/js/vendor/xregexp/xregexp.min.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/static/css/album-body.css" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/static/css/bootstrap-grid.css" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/static/css/bootstrap-grid.css.map" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/static/css/bootstrap-grid.min.css" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/static/css/bootstrap-grid.min.css.map" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/static/css/bootstrap-reboot.css" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/static/css/bootstrap-reboot.css.map" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/static/css/bootstrap-reboot.min.css" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/static/css/bootstrap-reboot.min.css.map" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/static/css/bootstrap.css" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/static/css/bootstrap.css.map" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/static/css/bootstrap.min.css" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/static/css/bootstrap.min.css.map" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/static/css/browse-1.css" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/static/css/browse-2.css" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/static/css/browse-3.css" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/static/css/form-elements.css" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/static/css/homepage-body.css" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/static/css/homepageCSS-1.css" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/static/css/homepageCSS-2.css" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/static/css/memories.css" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/static/css/menu-button.css" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/static/css/myStyle.css" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/static/css/navigation-bar.css" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/static/css/timeline.css" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/static/css/trigger.css" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/static/css/writing.css" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/static/js/bootstrap.bundle.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/static/js/bootstrap.bundle.js.map" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/static/js/bootstrap.bundle.min.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/static/js/bootstrap.bundle.min.js.map" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/static/js/bootstrap.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/static/js/bootstrap.js.map" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/static/js/bootstrap.min.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/static/js/bootstrap.min.js.map" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/static/js/classie.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/static/js/homepageJS-1.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/static/js/homepageJS-2.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/static/js/modalEffects.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/static/js/modernizr-2.6.2.min.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/static/js/polyfills.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/static/resource/info.txt" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../后台使用说明文档.md" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../说明文档.md" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/../../.idea/workspace.xml" afterPath="" />
       <change type="DELETED" beforePath="$PROJECT_DIR$/.idea/TWOFIVE.iml" afterPath="" />
       <change type="DELETED" beforePath="$PROJECT_DIR$/.idea/misc.xml" afterPath="" />
       <change type="DELETED" beforePath="$PROJECT_DIR$/.idea/modules.xml" afterPath="" />
       <change type="DELETED" beforePath="$PROJECT_DIR$/.idea/vcs.xml" afterPath="" />
       <change type="DELETED" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/TWOFIVE/__init__.py" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/TWOFIVE/settings.py" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/TWOFIVE/urls.py" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/TWOFIVE/wsgi.py" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/db.sqlite3" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/manage.py" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/media/1.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/media/In the mountains with stars.jpg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/media/admin_por_pic.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/media/admin_portrait.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/media/default.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/media/pan_por_pic.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/media/pan_portrait.jpg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/media/pan_portrait.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/memory/__init__.py" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/memory/admin.py" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/memory/apps.py" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/memory/forms.py" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/memory/migrations/0001_initial.py" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/memory/migrations/0002_user_title.py" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/memory/migrations/0003_user_portrait_url.py" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/memory/migrations/0004_auto_20171208_1204.py" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/memory/migrations/0005_auto_20171208_1426.py" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/memory/migrations/0006_comment.py" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/memory/migrations/0007_auto_20171209_0148.py" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/memory/migrations/0008_auto_20171209_0149.py" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/memory/migrations/0009_article_score.py" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/memory/migrations/__init__.py" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/memory/models.py" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/memory/static/css/album-body.css" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/memory/static/css/bootstrap-grid.css" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/memory/static/css/bootstrap-grid.css.map" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/memory/static/css/bootstrap-grid.min.css" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/memory/static/css/bootstrap-grid.min.css.map" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/memory/static/css/bootstrap-reboot.css" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/memory/static/css/bootstrap-reboot.css.map" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/memory/static/css/bootstrap-reboot.min.css" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/memory/static/css/bootstrap-reboot.min.css.map" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/memory/static/css/bootstrap.css" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/memory/static/css/bootstrap.css.map" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/memory/static/css/bootstrap.min.css" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/memory/static/css/bootstrap.min.css.map" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/memory/static/css/browse-1.css" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/memory/static/css/browse-2.css" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/memory/static/css/browse-3.css" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/memory/static/css/common.css" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/memory/static/css/demo.css" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/memory/static/css/fonts/icomoon.eot" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/memory/static/css/fonts/icomoon.svg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/memory/static/css/fonts/icomoon.ttf" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/memory/static/css/fonts/icomoon.woff" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/memory/static/css/form-elements.css" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/memory/static/css/homepage-body.css" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/memory/static/css/homepageCSS-1.css" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/memory/static/css/homepageCSS-2.css" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/memory/static/css/icons.css" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/memory/static/css/memories.css" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/memory/static/css/menu-button.css" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/memory/static/css/myStyle.css" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/memory/static/css/navigation-bar.css" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/memory/static/css/portrait.css" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/memory/static/css/settings.css" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/memory/static/css/style.css" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/memory/static/css/style4.css" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/memory/static/css/timeline.css" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/memory/static/css/trigger.css" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/memory/static/css/writing.css" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/memory/static/font/Hiragino Sans GB.ttc" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/memory/static/js/bootstrap.bundle.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/memory/static/js/bootstrap.bundle.js.map" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/memory/static/js/bootstrap.bundle.min.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/memory/static/js/bootstrap.bundle.min.js.map" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/memory/static/js/bootstrap.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/memory/static/js/bootstrap.js.map" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/memory/static/js/bootstrap.min.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/memory/static/js/bootstrap.min.js.map" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/memory/static/js/classie.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/memory/static/js/homepageJS-1.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/memory/static/js/homepageJS-2.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/memory/static/js/index.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/memory/static/js/jquery.dropdown.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/memory/static/js/jquery.form.min.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/memory/static/js/jquery.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/memory/static/js/modalEffects.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/memory/static/js/modernizr-2.6.2.min.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/memory/static/js/modernizr.custom.63321.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/memory/static/js/polyfills.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/memory/static/js/prefixfree.min.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/memory/static/resource/album/IMG_0273.jpg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/memory/static/resource/album/IMG_5533.jpg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/memory/static/resource/album/IMG_5882.jpg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/memory/static/resource/album/IMG_9162.jpg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/memory/static/resource/album/YINER-3 2.jpg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/memory/static/resource/album/album.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/memory/static/resource/album/recommend.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/memory/static/resource/album/recommend_selected.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/memory/static/resource/album/yiner-3.jpg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/memory/static/resource/album/yiner-6.jpg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/memory/static/resource/homepage/bg.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/memory/static/resource/homepage/button.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/memory/static/resource/homepage/homepage.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/memory/static/resource/homepage/homepage1.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/memory/static/resource/homepage/infobar.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/memory/static/resource/homepage/logo.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/memory/static/resource/homepage/magnifier.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/memory/static/resource/homepage/more.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/memory/static/resource/homepage/portrait.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/memory/static/resource/homepage/protrait.jpg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/memory/static/resource/homepage/time_dot.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/memory/static/resource/homepage/timeline.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/memory/static/resource/info.txt" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/memory/static/resource/login/bg.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/memory/static/resource/login/login.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/memory/static/resource/login/logo.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/memory/static/resource/recommend/bg.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/memory/static/resource/recommend/head-1.jpg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/memory/static/resource/recommend/head-10.jpg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/memory/static/resource/recommend/head-11.jpg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/memory/static/resource/recommend/head-12.jpg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/memory/static/resource/recommend/head-2.jpg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/memory/static/resource/recommend/head-3.jpg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/memory/static/resource/recommend/head-4.jpg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/memory/static/resource/recommend/head-5.jpg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/memory/static/resource/recommend/head-6.jpg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/memory/static/resource/recommend/head-7.jpg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/memory/static/resource/recommend/head-8.jpg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/memory/static/resource/recommend/head-9.jpg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/memory/static/resource/recommend/recommend.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/memory/static/resource/recommend/recommend_selected.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/memory/static/resource/settings/gou.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/memory/static/resource/settings/gou2.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/memory/static/resource/writing/font.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/memory/static/resource/writing/pic.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/memory/static/resource/writing/save.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/memory/static/resource/writing/writing.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/memory/static/resource/思维导图.jpg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/memory/static/resource/追忆往昔.mindnode/QuickLook/Preview.jpg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/memory/templates/album.html" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/memory/templates/browsing.html" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/memory/templates/homepage.html" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/memory/templates/registration/login.html" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/memory/templates/settings.html" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/memory/templates/writing.html" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/memory/tests.py" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/memory/urls.py" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/memory/views.py" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/requirements.txt" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/static/admin/css/base.css" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/static/admin/css/changelists.css" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/static/admin/css/dashboard.css" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/static/admin/css/fonts.css" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/static/admin/css/forms.css" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/static/admin/css/login.css" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/static/admin/css/rtl.css" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/static/admin/css/widgets.css" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/static/admin/fonts/LICENSE.txt" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/static/admin/fonts/README.txt" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/static/admin/fonts/Roboto-Bold-webfont.woff" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/static/admin/fonts/Roboto-Light-webfont.woff" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/static/admin/fonts/Roboto-Regular-webfont.woff" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/static/admin/img/LICENSE" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/static/admin/img/README.txt" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/static/admin/img/calendar-icons.svg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/static/admin/img/gis/move_vertex_off.svg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/static/admin/img/gis/move_vertex_on.svg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/static/admin/img/icon-addlink.svg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/static/admin/img/icon-alert.svg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/static/admin/img/icon-calendar.svg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/static/admin/img/icon-changelink.svg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/static/admin/img/icon-clock.svg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/static/admin/img/icon-deletelink.svg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/static/admin/img/icon-no.svg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/static/admin/img/icon-unknown-alt.svg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/static/admin/img/icon-unknown.svg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/static/admin/img/icon-yes.svg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/static/admin/img/inline-delete.svg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/static/admin/img/search.svg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/static/admin/img/selector-icons.svg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/static/admin/img/sorting-icons.svg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/static/admin/img/tooltag-add.svg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/static/admin/img/tooltag-arrowright.svg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/static/admin/js/SelectBox.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/static/admin/js/SelectFilter2.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/static/admin/js/actions.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/static/admin/js/actions.min.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/static/admin/js/admin/DateTimeShortcuts.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/static/admin/js/admin/RelatedObjectLookups.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/static/admin/js/calendar.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/static/admin/js/cancel.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/static/admin/js/change_form.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/static/admin/js/collapse.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/static/admin/js/collapse.min.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/static/admin/js/core.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/static/admin/js/inlines.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/static/admin/js/inlines.min.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/static/admin/js/jquery.init.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/static/admin/js/popup_response.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/static/admin/js/prepopulate.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/static/admin/js/prepopulate.min.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/static/admin/js/prepopulate_init.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/static/admin/js/timeparse.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/static/admin/js/urlify.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/static/admin/js/vendor/jquery/LICENSE-JQUERY.txt" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/static/admin/js/vendor/jquery/jquery.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/static/admin/js/vendor/jquery/jquery.min.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/static/admin/js/vendor/xregexp/LICENSE-XREGEXP.txt" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/static/admin/js/vendor/xregexp/xregexp.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/static/admin/js/vendor/xregexp/xregexp.min.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/static/css/album-body.css" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/static/css/bootstrap-grid.css" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/static/css/bootstrap-grid.css.map" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/static/css/bootstrap-grid.min.css" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/static/css/bootstrap-grid.min.css.map" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/static/css/bootstrap-reboot.css" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/static/css/bootstrap-reboot.css.map" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/static/css/bootstrap-reboot.min.css" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/static/css/bootstrap-reboot.min.css.map" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/static/css/bootstrap.css" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/static/css/bootstrap.css.map" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/static/css/bootstrap.min.css" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/static/css/bootstrap.min.css.map" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/static/css/browse-1.css" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/static/css/browse-2.css" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/static/css/browse-3.css" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/static/css/form-elements.css" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/static/css/homepage-body.css" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/static/css/homepageCSS-1.css" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/static/css/homepageCSS-2.css" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/static/css/memories.css" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/static/css/menu-button.css" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/static/css/myStyle.css" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/static/css/navigation-bar.css" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/static/css/timeline.css" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/static/css/trigger.css" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/static/css/writing.css" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/static/font/Hiragino Sans GB.ttc" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/static/js/bootstrap.bundle.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/static/js/bootstrap.bundle.js.map" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/static/js/bootstrap.bundle.min.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/static/js/bootstrap.bundle.min.js.map" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/static/js/bootstrap.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/static/js/bootstrap.js.map" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/static/js/bootstrap.min.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/static/js/bootstrap.min.js.map" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/static/js/classie.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/static/js/homepageJS-1.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/static/js/homepageJS-2.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/static/js/modalEffects.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/static/js/modernizr-2.6.2.min.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/static/js/polyfills.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/static/resource/album/IMG_0273.jpg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/static/resource/album/IMG_5533.jpg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/static/resource/album/IMG_5882.jpg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/static/resource/album/IMG_9162.jpg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/static/resource/album/YINER-3 2.jpg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/static/resource/album/album.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/static/resource/album/recommend.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/static/resource/album/recommend_selected.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/static/resource/album/yiner-3.jpg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/static/resource/album/yiner-6.jpg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/static/resource/homepage/bg.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/static/resource/homepage/button.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/static/resource/homepage/homepage.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/static/resource/homepage/homepage1.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/static/resource/homepage/infobar.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/static/resource/homepage/logo.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/static/resource/homepage/magnifier.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/static/resource/homepage/more.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/static/resource/homepage/portrait.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/static/resource/homepage/protrait.jpg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/static/resource/homepage/time_dot.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/static/resource/homepage/timeline.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/static/resource/info.txt" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/static/resource/login/bg.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/static/resource/login/login.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/static/resource/login/logo.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/static/resource/recommend/bg.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/static/resource/recommend/head-1.jpg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/static/resource/recommend/head-10.jpg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/static/resource/recommend/head-11.jpg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/static/resource/recommend/head-12.jpg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/static/resource/recommend/head-2.jpg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/static/resource/recommend/head-3.jpg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/static/resource/recommend/head-4.jpg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/static/resource/recommend/head-5.jpg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/static/resource/recommend/head-6.jpg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/static/resource/recommend/head-7.jpg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/static/resource/recommend/head-8.jpg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/static/resource/recommend/head-9.jpg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/static/resource/recommend/recommend.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/static/resource/recommend/recommend_selected.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/static/resource/writing/font.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/static/resource/writing/pic.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/static/resource/writing/save.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/static/resource/writing/writing.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/static/resource/思维导图.jpg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/static/resource/追忆往昔.mindnode/QuickLook/Preview.jpg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/../后台使用说明文档.md" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/../说明文档.md" afterPath="" />
     </list>
+    <ignored path="TWOFIVE.iws" />
+    <ignored path=".idea/workspace.xml" />
+    <ignored path=".idea/dataSources.local.xml" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="TRACKING_ENABLED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -16,112 +618,118 @@
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
     <option name="LAST_RESOLUTION" value="IGNORE" />
   </component>
+  <component name="CoverageDataManager">
+    <SUITE FILE_PATH="coverage/TWOFIVE$Test__memory_templates_writing_html.coverage" NAME="Test: memory.templates.writing.html Coverage Results" MODIFIED="1512880296914" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="" />
+  </component>
+  <component name="CreatePatchCommitExecutor">
+    <option name="PATCH_PATH" value="" />
+  </component>
   <component name="DjangoConsoleOptions" custom-start-script="import sys; print('Python %s on %s' % (sys.version, sys.platform))&#10;import django; print('Django %s' % django.get_version())&#10;sys.path.extend([WORKING_DIR_AND_PYTHON_PATHS])&#10;if 'setup' in dir(django): django.setup()&#10;import django_manage_shell; django_manage_shell.run(PROJECT_ROOT)">
     <option name="myCustomStartScript" value="import sys; print('Python %s on %s' % (sys.version, sys.platform))&#10;import django; print('Django %s' % django.get_version())&#10;sys.path.extend([WORKING_DIR_AND_PYTHON_PATHS])&#10;if 'setup' in dir(django): django.setup()&#10;import django_manage_shell; django_manage_shell.run(PROJECT_ROOT)" />
   </component>
+  <component name="ExecutionTargetManager" SELECTED_TARGET="default_target" />
+  <component name="FavoritesManager">
+    <favorites_list name="TWOFIVE" />
+  </component>
   <component name="FileEditorManager">
-    <leaf SIDE_TABS_SIZE_LIMIT_KEY="375">
-      <file leaf-file-name="views.py" pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/memory/views.py">
+    <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
+      <file leaf-file-name="settings.html" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/memory/templates/settings.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="75">
-              <caret line="5" column="36" lean-forward="false" selection-start-line="5" selection-start-column="36" selection-end-line="5" selection-end-column="36" />
+            <state relative-caret-position="405">
+              <caret line="27" column="0" selection-start-line="27" selection-start-column="0" selection-end-line="27" selection-end-column="0" />
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="writing.html" pinned="false" current-in-tab="false">
+      <file leaf-file-name="homepage-body.css" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/memory/static/css/homepage-body.css">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="630">
+              <caret line="42" column="11" selection-start-line="42" selection-start-column="11" selection-end-line="42" selection-end-column="11" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="navigation-bar.css" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/memory/static/css/navigation-bar.css">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="120">
+              <caret line="20" column="5" selection-start-line="20" selection-start-column="5" selection-end-line="20" selection-end-column="5" />
+              <folding>
+                <element signature="e#5#37#0" expanded="false" />
+                <element signature="e#49#71#0" expanded="false" />
+                <element signature="e#75#105#0" expanded="false" />
+                <element signature="e#117#226#0" expanded="false" />
+                <element signature="e#431#453#0" expanded="false" />
+                <element signature="e#463#493#0" expanded="false" />
+                <element signature="e#735#822#0" expanded="false" />
+                <element signature="e#1159#1233#0" expanded="false" />
+                <element signature="e#1267#1333#0" expanded="false" />
+                <element signature="e#1531#1625#0" expanded="false" />
+                <element signature="e#1654#1740#0" expanded="false" />
+                <element signature="e#1755#1778#0" expanded="false" />
+                <element signature="e#1846#1869#0" expanded="false" />
+                <element signature="e#1891#1921#0" expanded="false" />
+                <element signature="e#1960#1988#0" expanded="false" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="writing.html" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/memory/templates/writing.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="2190">
-              <caret line="146" column="0" lean-forward="false" selection-start-line="146" selection-start-column="0" selection-end-line="146" selection-end-column="0" />
+            <state relative-caret-position="210">
+              <caret line="130" column="75" selection-start-line="130" selection-start-column="75" selection-end-line="130" selection-end-column="75" />
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="forms.py" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/memory/forms.py">
+      <file leaf-file-name="style4.css" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/memory/static/css/style4.css">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="1005">
-              <caret line="67" column="34" lean-forward="false" selection-start-line="67" selection-start-column="34" selection-end-line="67" selection-end-column="34" />
+            <state relative-caret-position="15">
+              <caret line="1" column="16" selection-start-line="1" selection-start-column="16" selection-end-line="1" selection-end-column="16" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="settings.css" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/memory/static/css/settings.css">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="345">
+              <caret line="23" column="32" selection-start-line="23" selection-start-column="32" selection-end-line="23" selection-end-column="32" />
               <folding>
-                <element signature="e#24#97#0" expanded="true" />
+                <element signature="e#910#994#0" expanded="false" />
+                <element signature="e#1017#1175#0" expanded="false" />
+                <element signature="e#1197#1304#0" expanded="false" />
+                <element signature="e#1316#1876#0" expanded="false" />
+                <element signature="e#1888#1914#0" expanded="false" />
               </folding>
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="urls.py" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/memory/urls.py">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="270">
-              <caret line="18" column="54" lean-forward="false" selection-start-line="18" selection-start-column="54" selection-end-line="18" selection-end-column="54" />
-              <folding>
-                <element signature="e#0#40#0" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="models.py" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/memory/models.py">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="555">
-              <caret line="37" column="0" lean-forward="false" selection-start-line="37" selection-start-column="0" selection-end-line="37" selection-end-column="0" />
-              <folding>
-                <element signature="e#24#63#0" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="login.html" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/memory/templates/registration/login.html">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="1740">
-              <caret line="116" column="51" lean-forward="false" selection-start-line="116" selection-start-column="51" selection-end-line="116" selection-end-column="51" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="settings.py" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/TWOFIVE/settings.py">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="945">
-              <caret line="63" column="23" lean-forward="false" selection-start-line="63" selection-start-column="23" selection-end-line="63" selection-end-column="23" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="admin.py" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/memory/admin.py">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="360">
-              <caret line="27" column="27" lean-forward="false" selection-start-line="27" selection-start-column="27" selection-end-line="27" selection-end-column="27" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="apps.py" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/memory/apps.py">
+      <file leaf-file-name="browsing.html" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/memory/templates/browsing.html">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="0">
-              <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+              <caret line="0" column="15" selection-start-line="0" selection-start-column="15" selection-end-line="0" selection-end-column="15" />
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="manage.py" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/manage.py">
+      <file leaf-file-name="album.html" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/memory/templates/album.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="270">
-              <caret line="19" column="13" lean-forward="false" selection-start-line="19" selection-start-column="13" selection-end-line="19" selection-end-column="13" />
+            <state relative-caret-position="2340">
+              <caret line="156" column="54" selection-start-line="156" selection-start-column="54" selection-end-line="156" selection-end-column="54" />
               <folding />
             </state>
           </provider>
@@ -129,38 +737,30 @@
       </file>
     </leaf>
   </component>
-  <component name="FileTemplateManagerImpl">
-    <option name="RECENT_TEMPLATES">
+  <component name="Git.Settings">
+    <option name="PREVIOUS_COMMIT_AUTHORS">
       <list>
-        <option value="Python Script" />
-        <option value="HTML File" />
+        <option value="YINNNER &lt;yulianwei1998@163.com&gt;" />
       </list>
     </option>
-  </component>
-  <component name="Git.Settings">
-    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$/../.." />
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$/.." />
+    <push-targets>
+      <push-target-info repo="$PROJECT_DIR$/../.." source="master" target-remote="origin" target-branch="yiner" />
+    </push-targets>
   </component>
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
-        <option value="$PROJECT_DIR$/memory/serializers.py" />
+        <option value="$PROJECT_DIR$/memory/static/css/myStyle.css" />
+        <option value="$PROJECT_DIR$/memory/templates/registration/login.html" />
+        <option value="$PROJECT_DIR$/memory/static/css/navigation-bar.css" />
+        <option value="$PROJECT_DIR$/memory/static/css/homepage-body.css" />
+        <option value="$PROJECT_DIR$/memory/templates/homepage.html" />
         <option value="$PROJECT_DIR$/memory/templates/album.html" />
         <option value="$PROJECT_DIR$/memory/templates/browsing.html" />
-        <option value="$PROJECT_DIR$/memory/templates/registration/login.html" />
-        <option value="$PROJECT_DIR$/memory/templates/homepage.html" />
-        <option value="$PROJECT_DIR$/memory/search_indexes.py" />
-        <option value="$PROJECT_DIR$/memory/whoosh_cn_backend.py" />
-        <option value="$PROJECT_DIR$/memory/static/css/myStyle.css" />
-        <option value="$PROJECT_DIR$/TWOFIVE/settings.py" />
-        <option value="$PROJECT_DIR$/memory/templates/article-details.html" />
-        <option value="$PROJECT_DIR$/memory/templates/article_list.html" />
-        <option value="$PROJECT_DIR$/TWOFIVE/urls.py" />
-        <option value="$PROJECT_DIR$/memory/admin.py" />
-        <option value="$PROJECT_DIR$/memory/models.py" />
-        <option value="$PROJECT_DIR$/memory/urls.py" />
+        <option value="$PROJECT_DIR$/memory/templates/settings.html" />
+        <option value="$PROJECT_DIR$/memory/static/css/settings.css" />
         <option value="$PROJECT_DIR$/memory/templates/writing.html" />
-        <option value="$PROJECT_DIR$/memory/forms.py" />
-        <option value="$PROJECT_DIR$/memory/views.py" />
       </list>
     </option>
   </component>
@@ -170,13 +770,22 @@
     <detection-done>true</detection-done>
     <sorting>DEFINITION_ORDER</sorting>
   </component>
-  <component name="ProjectFrameBounds" extendedState="6">
-    <option name="x" value="312" />
+  <component name="ProjectFrameBounds">
+    <option name="x" value="18" />
     <option name="y" value="22" />
-    <option name="width" value="1280" />
-    <option name="height" value="778" />
+    <option name="width" value="1121" />
+    <option name="height" value="748" />
   </component>
-  <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true">
+    <OptionsSetting value="true" id="Add" />
+    <OptionsSetting value="true" id="Remove" />
+    <OptionsSetting value="true" id="Checkout" />
+    <OptionsSetting value="true" id="Update" />
+    <OptionsSetting value="true" id="Status" />
+    <OptionsSetting value="true" id="Edit" />
+    <ConfirmationsSetting value="0" id="Add" />
+    <ConfirmationsSetting value="0" id="Remove" />
+  </component>
   <component name="ProjectView">
     <navigator currentView="ProjectPane" proportions="" version="1">
       <flattenPackages />
@@ -194,18 +803,22 @@
     <panes>
       <pane id="ProjectPane">
         <subPane>
-          <expand>
-            <path>
-              <item name="TWOFIVE" type="b2602c69:ProjectViewProjectNode" />
-              <item name="TWOFIVE" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="TWOFIVE" type="b2602c69:ProjectViewProjectNode" />
-              <item name="TWOFIVE" type="462c0819:PsiDirectoryNode" />
-              <item name="TWOFIVE" type="462c0819:PsiDirectoryNode" />
-            </path>
-          </expand>
-          <select />
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="TWOFIVE" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="TWOFIVE" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="TWOFIVE" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
         </subPane>
       </pane>
       <pane id="Scratches" />
@@ -213,25 +826,262 @@
     </panes>
   </component>
   <component name="PropertiesComponent">
-    <property name="settings.editor.selected.configurable" value="com.jetbrains.python.configuration.PyActiveSdkModuleConfigurable" />
     <property name="WebServerToolWindowFactoryState" value="false" />
-    <property name="last_opened_file_path" value="D:/software/projects/Python/TWOFIVE" />
-    <property name="DefaultHtmlFileTemplate" value="HTML File" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
   </component>
-  <component name="RunDashboard">
-    <option name="ruleStates">
-      <list>
-        <RuleState>
-          <option name="name" value="ConfigurationTypeDashboardGroupingRule" />
-        </RuleState>
-        <RuleState>
-          <option name="name" value="StatusDashboardGroupingRule" />
-        </RuleState>
-      </list>
-    </option>
-  </component>
-  <component name="RunManager" selected="Django server.TWOFIVE">
-    <configuration name="TWOFIVE" type="Python.DjangoServer" factoryName="Django server">
+  <component name="RunManager" selected="Django tests.Test: memory.templates.writing.html">
+    <configuration default="false" name="Test: memory.templates.writing.html" type="DjangoTestsConfigurationType" factoryName="Django tests" temporary="true">
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs>
+        <env name="PYTHONUNBUFFERED" value="1" />
+      </envs>
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="" />
+      <option name="IS_MODULE_SDK" value="true" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <module name="TWOFIVE" />
+      <EXTENSION ID="PythonCoverageRunConfigurationExtension" enabled="false" sample_coverage="true" runner="coverage.py" />
+      <option name="TARGET" value="memory.templates.writing.html" />
+      <option name="SETTINGS_FILE" value="" />
+      <option name="CUSTOM_SETTINGS" value="false" />
+      <option name="USE_OPTIONS" value="false" />
+      <option name="OPTIONS" value="" />
+      <method />
+    </configuration>
+    <configuration default="true" type="DjangoTestsConfigurationType" factoryName="Django tests">
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs>
+        <env name="PYTHONUNBUFFERED" value="1" />
+      </envs>
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="" />
+      <option name="IS_MODULE_SDK" value="false" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <module name="TWOFIVE" />
+      <EXTENSION ID="PythonCoverageRunConfigurationExtension" enabled="false" sample_coverage="true" runner="coverage.py" />
+      <option name="TARGET" value="" />
+      <option name="SETTINGS_FILE" value="" />
+      <option name="CUSTOM_SETTINGS" value="false" />
+      <option name="USE_OPTIONS" value="false" />
+      <option name="OPTIONS" value="" />
+      <method />
+    </configuration>
+    <configuration default="true" type="JavascriptDebugType" factoryName="JavaScript Debug">
+      <method />
+    </configuration>
+    <configuration default="true" type="PyBehaveRunConfigurationType" factoryName="Behave">
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs />
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="" />
+      <option name="IS_MODULE_SDK" value="false" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <module name="TWOFIVE" />
+      <EXTENSION ID="PythonCoverageRunConfigurationExtension" enabled="false" sample_coverage="true" runner="coverage.py" />
+      <option name="ADDITIONAL_ARGS" value="" />
+      <method />
+    </configuration>
+    <configuration default="true" type="PyLettuceRunConfigurationType" factoryName="Lettuce">
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs />
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="" />
+      <option name="IS_MODULE_SDK" value="false" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <module name="TWOFIVE" />
+      <EXTENSION ID="PythonCoverageRunConfigurationExtension" enabled="false" sample_coverage="true" runner="coverage.py" />
+      <option name="ADDITIONAL_ARGS" value="" />
+      <method />
+    </configuration>
+    <configuration default="true" type="Python.DjangoServer" factoryName="Django server">
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs>
+        <env name="PYTHONUNBUFFERED" value="1" />
+      </envs>
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="" />
+      <option name="IS_MODULE_SDK" value="false" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <module name="TWOFIVE" />
+      <option name="launchJavascriptDebuger" value="false" />
+      <option name="port" value="8000" />
+      <option name="host" value="" />
+      <option name="additionalOptions" value="" />
+      <option name="browserUrl" value="" />
+      <option name="runTestServer" value="false" />
+      <option name="runNoReload" value="false" />
+      <option name="useCustomRunCommand" value="false" />
+      <option name="customRunCommand" value="" />
+      <method />
+    </configuration>
+    <configuration default="true" type="PythonConfigurationType" factoryName="Python">
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs>
+        <env name="PYTHONUNBUFFERED" value="1" />
+      </envs>
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="" />
+      <option name="IS_MODULE_SDK" value="false" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <module name="TWOFIVE" />
+      <EXTENSION ID="PythonCoverageRunConfigurationExtension" enabled="false" sample_coverage="true" runner="coverage.py" />
+      <option name="SCRIPT_NAME" value="" />
+      <option name="PARAMETERS" value="" />
+      <option name="SHOW_COMMAND_LINE" value="false" />
+      <method />
+    </configuration>
+    <configuration default="true" type="Tox" factoryName="Tox">
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs />
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="" />
+      <option name="IS_MODULE_SDK" value="false" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <EXTENSION ID="PythonCoverageRunConfigurationExtension" enabled="false" sample_coverage="true" runner="coverage.py" />
+      <module name="TWOFIVE" />
+      <method />
+    </configuration>
+    <configuration default="true" type="js.build_tools.gulp" factoryName="Gulp.js">
+      <node-interpreter>project</node-interpreter>
+      <node-options />
+      <gulpfile />
+      <tasks />
+      <arguments />
+      <envs />
+      <method />
+    </configuration>
+    <configuration default="true" type="js.build_tools.npm" factoryName="npm">
+      <command value="run-script" />
+      <scripts />
+      <node-interpreter value="project" />
+      <envs />
+      <method />
+    </configuration>
+    <configuration default="true" type="tests" factoryName="Attests">
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs />
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="" />
+      <option name="IS_MODULE_SDK" value="false" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <module name="TWOFIVE" />
+      <EXTENSION ID="PythonCoverageRunConfigurationExtension" enabled="false" sample_coverage="true" runner="coverage.py" />
+      <option name="SCRIPT_NAME" value="" />
+      <option name="CLASS_NAME" value="" />
+      <option name="METHOD_NAME" value="" />
+      <option name="FOLDER_NAME" value="" />
+      <option name="TEST_TYPE" value="TEST_SCRIPT" />
+      <option name="PATTERN" value="" />
+      <option name="USE_PATTERN" value="false" />
+      <method />
+    </configuration>
+    <configuration default="true" type="tests" factoryName="Doctests">
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs />
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="" />
+      <option name="IS_MODULE_SDK" value="false" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <module name="TWOFIVE" />
+      <EXTENSION ID="PythonCoverageRunConfigurationExtension" enabled="false" sample_coverage="true" runner="coverage.py" />
+      <option name="SCRIPT_NAME" value="" />
+      <option name="CLASS_NAME" value="" />
+      <option name="METHOD_NAME" value="" />
+      <option name="FOLDER_NAME" value="" />
+      <option name="TEST_TYPE" value="TEST_SCRIPT" />
+      <option name="PATTERN" value="" />
+      <option name="USE_PATTERN" value="false" />
+      <method />
+    </configuration>
+    <configuration default="true" type="tests" factoryName="Nosetests">
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs />
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="" />
+      <option name="IS_MODULE_SDK" value="false" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <module name="TWOFIVE" />
+      <EXTENSION ID="PythonCoverageRunConfigurationExtension" enabled="false" sample_coverage="true" runner="coverage.py" />
+      <option name="SCRIPT_NAME" value="" />
+      <option name="CLASS_NAME" value="" />
+      <option name="METHOD_NAME" value="" />
+      <option name="FOLDER_NAME" value="" />
+      <option name="TEST_TYPE" value="TEST_SCRIPT" />
+      <option name="PATTERN" value="" />
+      <option name="USE_PATTERN" value="false" />
+      <option name="PARAMS" value="" />
+      <option name="USE_PARAM" value="false" />
+      <method />
+    </configuration>
+    <configuration default="true" type="tests" factoryName="Unittests">
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs />
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="" />
+      <option name="IS_MODULE_SDK" value="false" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <module name="TWOFIVE" />
+      <EXTENSION ID="PythonCoverageRunConfigurationExtension" enabled="false" sample_coverage="true" runner="coverage.py" />
+      <option name="SCRIPT_NAME" value="" />
+      <option name="CLASS_NAME" value="" />
+      <option name="METHOD_NAME" value="" />
+      <option name="FOLDER_NAME" value="" />
+      <option name="TEST_TYPE" value="TEST_SCRIPT" />
+      <option name="PATTERN" value="" />
+      <option name="USE_PATTERN" value="false" />
+      <option name="PUREUNITTEST" value="true" />
+      <option name="PARAMS" value="" />
+      <option name="USE_PARAM" value="false" />
+      <method />
+    </configuration>
+    <configuration default="true" type="tests" factoryName="py.test">
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs />
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="" />
+      <option name="IS_MODULE_SDK" value="false" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <module name="TWOFIVE" />
+      <EXTENSION ID="PythonCoverageRunConfigurationExtension" enabled="false" sample_coverage="true" runner="coverage.py" />
+      <option name="SCRIPT_NAME" value="" />
+      <option name="CLASS_NAME" value="" />
+      <option name="METHOD_NAME" value="" />
+      <option name="FOLDER_NAME" value="" />
+      <option name="TEST_TYPE" value="TEST_SCRIPT" />
+      <option name="PATTERN" value="" />
+      <option name="USE_PATTERN" value="false" />
+      <option name="testToRun" value="" />
+      <option name="keywords" value="" />
+      <option name="params" value="" />
+      <option name="USE_PARAM" value="false" />
+      <option name="USE_KEYWORD" value="false" />
+      <method />
+    </configuration>
+    <configuration default="false" name="TWOFIVE" type="Python.DjangoServer" factoryName="Django server">
       <option name="INTERPRETER_OPTIONS" value="" />
       <option name="PARENT_ENVS" value="true" />
       <envs>
@@ -253,59 +1103,119 @@
       <option name="runNoReload" value="false" />
       <option name="useCustomRunCommand" value="false" />
       <option name="customRunCommand" value="" />
+      <method />
     </configuration>
+    <list size="2">
+      <item index="0" class="java.lang.String" itemvalue="Django server.TWOFIVE" />
+      <item index="1" class="java.lang.String" itemvalue="Django tests.Test: memory.templates.writing.html" />
+    </list>
+    <recent_temporary>
+      <list size="1">
+        <item index="0" class="java.lang.String" itemvalue="Django tests.Test: memory.templates.writing.html" />
+      </list>
+    </recent_temporary>
   </component>
   <component name="ShelveChangesManager" show_recycled="false">
     <option name="remove_strategy" value="false" />
   </component>
-  <component name="SvnConfiguration">
-    <configuration />
-  </component>
   <component name="TaskManager">
     <task active="true" id="Default" summary="Default task">
-      <changelist id="866d91df-491a-4517-8ac2-67baa85cb42a" name="Default" comment="" />
-      <created>1512141505807</created>
+      <changelist id="e17d9f27-ab2e-46d1-ad38-53d828a39363" name="Default" comment="" />
+      <created>1512813865200</created>
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
-      <updated>1512141505807</updated>
+      <updated>1512813865200</updated>
     </task>
-    <task id="LOCAL-00001" summary="添加数据库">
-      <created>1512843058620</created>
+    <task id="LOCAL-00001" summary="完成登录页面响应式！">
+      <created>1512832539889</created>
       <option name="number" value="00001" />
       <option name="presentableId" value="LOCAL-00001" />
       <option name="project" value="LOCAL" />
-      <updated>1512843058620</updated>
+      <updated>1512832539889</updated>
     </task>
-    <option name="localTasksCounter" value="2" />
+    <task id="LOCAL-00002" summary="完成个人主页响应式！">
+      <created>1512845458103</created>
+      <option name="number" value="00002" />
+      <option name="presentableId" value="LOCAL-00002" />
+      <option name="project" value="LOCAL" />
+      <updated>1512845458103</updated>
+    </task>
+    <task id="LOCAL-00003" summary="整理文件">
+      <created>1512845870923</created>
+      <option name="number" value="00003" />
+      <option name="presentableId" value="LOCAL-00003" />
+      <option name="project" value="LOCAL" />
+      <updated>1512845870923</updated>
+    </task>
+    <task id="LOCAL-00004" summary="整理文件">
+      <created>1512846588443</created>
+      <option name="number" value="00004" />
+      <option name="presentableId" value="LOCAL-00004" />
+      <option name="project" value="LOCAL" />
+      <updated>1512846588443</updated>
+    </task>
+    <task id="LOCAL-00005" summary="整理文件">
+      <created>1512846682731</created>
+      <option name="number" value="00005" />
+      <option name="presentableId" value="LOCAL-00005" />
+      <option name="project" value="LOCAL" />
+      <updated>1512846682731</updated>
+    </task>
+    <task id="LOCAL-00006" summary="整理文件">
+      <created>1512846744491</created>
+      <option name="number" value="00006" />
+      <option name="presentableId" value="LOCAL-00006" />
+      <option name="project" value="LOCAL" />
+      <updated>1512846744491</updated>
+    </task>
+    <task id="LOCAL-00007" summary="Merge branch 'yiner' of https://github.com/YINNNER/TWOFIVE_2.0&#10;&#10;# Conflicts:&#10;#&#9;.idea/workspace.xml&#10;#&#9;TWOFIVE-django/TWOFIVE/.idea/TWOFIVE.iml&#10;#&#9;TWOFIVE-django/TWOFIVE/.idea/vcs.xml&#10;#&#9;TWOFIVE-django/TWOFIVE/.idea/workspace.xml&#10;#&#9;TWOFIVE-django/TWOFIVE/db.sqlite3&#10;">
+      <created>1512847042293</created>
+      <option name="number" value="00007" />
+      <option name="presentableId" value="LOCAL-00007" />
+      <option name="project" value="LOCAL" />
+      <updated>1512847042293</updated>
+    </task>
+    <task id="LOCAL-00008" summary="Merge branch 'yiner' of https://github.com/YINNNER/TWOFIVE_2.0&#10;&#10;# Conflicts:&#10;#&#9;.idea/workspace.xml&#10;#&#9;TWOFIVE-django/TWOFIVE/.idea/TWOFIVE.iml&#10;#&#9;TWOFIVE-django/TWOFIVE/.idea/vcs.xml&#10;#&#9;TWOFIVE-django/TWOFIVE/.idea/workspace.xml&#10;#&#9;TWOFIVE-django/TWOFIVE/db.sqlite3&#10;">
+      <created>1512881033195</created>
+      <option name="number" value="00008" />
+      <option name="presentableId" value="LOCAL-00008" />
+      <option name="project" value="LOCAL" />
+      <updated>1512881033195</updated>
+    </task>
+    <option name="localTasksCounter" value="9" />
     <servers />
   </component>
+  <component name="TestHistory">
+    <history-entry file="Test__memory_templates_writing_html - 2017.12.10 at 12h 30m 01s.xml">
+      <configuration name="Test: memory.templates.writing.html" configurationId="DjangoTestsConfigurationType" />
+    </history-entry>
+    <history-entry file="Test__memory_templates_writing_html - 2017.12.10 at 12h 31m 37s.xml">
+      <configuration name="Test: memory.templates.writing.html" configurationId="DjangoTestsConfigurationType" />
+    </history-entry>
+  </component>
   <component name="ToolWindowManager">
-    <frame x="6" y="22" width="1280" height="778" extended-state="6" />
+    <frame x="18" y="22" width="1121" height="748" extended-state="0" />
+    <editor active="false" />
     <layout>
-      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.27221325" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.29379055" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
-      <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32933334" sideWeight="0.5" order="11" side_tool="true" content_ui="tabs" />
+      <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.3877551" sideWeight="0.5690924" order="7" side_tool="true" content_ui="tabs" />
       <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
-      <window_info id="Version Control" active="true" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.568082" sideWeight="0.5" order="8" side_tool="false" content_ui="tabs" />
-      <window_info id="Python Console" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.3287483" sideWeight="0.5" order="9" side_tool="false" content_ui="tabs" />
-      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32599726" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
+      <window_info id="Version Control" active="true" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.375" sideWeight="0.4309076" order="7" side_tool="false" content_ui="tabs" />
+      <window_info id="Python Console" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.3292683" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
-      <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="10" side_tool="false" content_ui="tabs" />
+      <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.55487806" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="true" content_ui="tabs" />
-      <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.35197368" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
-      <window_info id="Data View" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
-      <window_info id="manage.py@TWOFIVE" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.34662998" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
       <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Inspection" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
+      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32944608" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="2" side_tool="false" content_ui="combo" />
-      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32737276" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
+      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
+      <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
     </layout>
-  </component>
-  <component name="TypeScriptGeneratedFilesManager">
-    <option name="version" value="1" />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
     <option name="TAB_STATES">
@@ -319,224 +1229,401 @@
               <option name="RECENTLY_FILTERED_BRANCH_GROUPS">
                 <collection />
               </option>
-              <option name="COLUMN_ORDER">
-                <list>
-                  <option value="0" />
-                  <option value="1" />
-                  <option value="2" />
-                  <option value="3" />
-                </list>
-              </option>
             </State>
           </value>
         </entry>
       </map>
     </option>
   </component>
+  <component name="Vcs.Log.UiProperties">
+    <option name="RECENTLY_FILTERED_USER_GROUPS">
+      <collection />
+    </option>
+    <option name="RECENTLY_FILTERED_BRANCH_GROUPS">
+      <collection />
+    </option>
+  </component>
   <component name="VcsContentAnnotationSettings">
     <option name="myLimit" value="2678400000" />
   </component>
   <component name="VcsManagerConfiguration">
-    <MESSAGE value="添加数据库" />
-    <option name="LAST_COMMIT_MESSAGE" value="添加数据库" />
+    <MESSAGE value="完成登录页面响应式！" />
+    <MESSAGE value="完成个人主页响应式！" />
+    <MESSAGE value="整理文件" />
+    <MESSAGE value="Merge branch 'yiner' of https://github.com/YINNNER/TWOFIVE_2.0&#10;&#10;# Conflicts:&#10;#&#9;.idea/workspace.xml&#10;#&#9;TWOFIVE-django/TWOFIVE/.idea/TWOFIVE.iml&#10;#&#9;TWOFIVE-django/TWOFIVE/.idea/vcs.xml&#10;#&#9;TWOFIVE-django/TWOFIVE/.idea/workspace.xml&#10;#&#9;TWOFIVE-django/TWOFIVE/db.sqlite3&#10;" />
+    <option name="LAST_COMMIT_MESSAGE" value="Merge branch 'yiner' of https://github.com/YINNNER/TWOFIVE_2.0&#10;&#10;# Conflicts:&#10;#&#9;.idea/workspace.xml&#10;#&#9;TWOFIVE-django/TWOFIVE/.idea/TWOFIVE.iml&#10;#&#9;TWOFIVE-django/TWOFIVE/.idea/vcs.xml&#10;#&#9;TWOFIVE-django/TWOFIVE/.idea/workspace.xml&#10;#&#9;TWOFIVE-django/TWOFIVE/db.sqlite3&#10;" />
   </component>
   <component name="XDebuggerManager">
-    <breakpoint-manager>
-      <option name="time" value="29" />
-    </breakpoint-manager>
+    <breakpoint-manager />
     <watches-manager />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://D:/Python27/Lib/collections.py" />
-    <entry file="file://D:/Python27/Lib/site-packages/django/utils/datastructures.py" />
-    <entry file="file://D:/Python27/Lib/site-packages/django/forms/forms.py" />
-    <entry file="file://D:/Python27/Lib/site-packages/django/conf/urls/__init__.py" />
-    <entry file="file://D:/Python27/Lib/site-packages/django/shortcuts.py" />
-    <entry file="file://D:/Python27/Lib/site-packages/django/contrib/auth/urls.py" />
-    <entry file="file://D:/Python27/Lib/site-packages/django/contrib/auth/__init__.py" />
-    <entry file="file://D:/Python27/Lib/site-packages/django/views/generic/base.py" />
-    <entry file="file://D:/Python27/Lib/site-packages/django/contrib/auth/views.py" />
-    <entry file="file://D:/Python27/Lib/site-packages/django/forms/widgets.py" />
-    <entry file="file://D:/Python27/Lib/site-packages/django/forms/fields.py" />
-    <entry file="file://$PROJECT_DIR$/memory/serializers.py" />
-    <entry file="file://D:/Python27/Lib/site-packages/django/contrib/auth/admin.py" />
-    <entry file="file://D:/Python27/Lib/site-packages/django/forms/models.py" />
-    <entry file="file://D:/Python27/Lib/site-packages/django/contrib/auth/forms.py" />
-    <entry file="file://D:/Python27/Lib/site-packages/django/db/backends/sqlite3/base.py" />
-    <entry file="file://D:/Python27/Lib/site-packages/django/utils/functional.py" />
-    <entry file="file://$PROJECT_DIR$/memory/templates/album.html">
+    <entry file="file://$PROJECT_DIR$/memory/templates/settings.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="966">
-          <caret line="42" column="0" lean-forward="false" selection-start-line="42" selection-start-column="0" selection-end-line="42" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/memory/templates/browsing.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="8970">
-          <caret line="390" column="56" lean-forward="false" selection-start-line="390" selection-start-column="56" selection-end-line="390" selection-end-column="56" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/memory/search_indexes.py" />
-    <entry file="file://$PROJECT_DIR$/memory/whoosh_cn_backend.py" />
-    <entry file="file://$PROJECT_DIR$/memory/static/css/form-elements.css">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="23">
-          <caret line="17" column="8" lean-forward="false" selection-start-line="17" selection-start-column="8" selection-end-line="17" selection-end-column="8" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/memory/static/css/homepageCSS-1.css">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+        <state relative-caret-position="405">
+          <caret line="27" column="0" selection-start-line="27" selection-start-column="0" selection-end-line="27" selection-end-column="0" />
+          <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/memory/static/css/homepage-body.css">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/memory/static/css/myStyle.css">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="368">
-          <caret line="16" column="0" lean-forward="false" selection-start-line="16" selection-start-column="0" selection-end-line="16" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/memory/static/css/bootstrap.css">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="23">
-          <caret line="1870" column="20" lean-forward="false" selection-start-line="1870" selection-start-column="20" selection-end-line="1870" selection-end-column="20" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/memory/static/css/album-body.css">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://D:/Python27/Lib/site-packages/django/contrib/auth/decorators.py" />
-    <entry file="file://D:/Python27/Lib/site-packages/django/utils/deprecation.py" />
-    <entry file="file://D:/Python27/Lib/site-packages/django/core/handlers/exception.py" />
-    <entry file="file://D:/Python27/Lib/site-packages/django/core/handlers/base.py" />
-    <entry file="file://D:/Python27/Lib/site-packages/django/core/handlers/wsgi.py" />
-    <entry file="file://D:/Python27/Lib/site-packages/django/contrib/staticfiles/handlers.py" />
-    <entry file="file://D:/Python27/Lib/wsgiref/handlers.py" />
-    <entry file="file://D:/Python27/Lib/site-packages/django/core/servers/basehttp.py" />
-    <entry file="file://D:/Python27/Lib/SocketServer.py" />
-    <entry file="file://$PROJECT_DIR$/memory/tests.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/memory/templates/homepage.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="246">
-          <caret line="84" column="26" lean-forward="true" selection-start-line="84" selection-start-column="26" selection-end-line="84" selection-end-column="26" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/memory/templates/article-details.html" />
-    <entry file="file://$PROJECT_DIR$/memory/templates/article_list.html" />
-    <entry file="file://$PROJECT_DIR$/TWOFIVE/urls.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="300">
-          <caret line="21" column="38" lean-forward="false" selection-start-line="21" selection-start-column="38" selection-end-line="21" selection-end-column="38" />
+        <state relative-caret-position="630">
+          <caret line="42" column="11" selection-start-line="42" selection-start-column="11" selection-end-line="42" selection-end-column="11" />
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/manage.py">
+    <entry file="file://$PROJECT_DIR$/memory/static/css/navigation-bar.css">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="270">
-          <caret line="19" column="13" lean-forward="false" selection-start-line="19" selection-start-column="13" selection-end-line="19" selection-end-column="13" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/TWOFIVE/settings.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="945">
-          <caret line="63" column="23" lean-forward="false" selection-start-line="63" selection-start-column="23" selection-end-line="63" selection-end-column="23" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/memory/templates/registration/login.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1740">
-          <caret line="116" column="51" lean-forward="false" selection-start-line="116" selection-start-column="51" selection-end-line="116" selection-end-column="51" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/memory/apps.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/memory/admin.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="360">
-          <caret line="27" column="27" lean-forward="false" selection-start-line="27" selection-start-column="27" selection-end-line="27" selection-end-column="27" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/memory/models.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="555">
-          <caret line="37" column="0" lean-forward="false" selection-start-line="37" selection-start-column="0" selection-end-line="37" selection-end-column="0" />
+        <state relative-caret-position="120">
+          <caret line="20" column="5" selection-start-line="20" selection-start-column="5" selection-end-line="20" selection-end-column="5" />
           <folding>
-            <element signature="e#24#63#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/memory/urls.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="270">
-          <caret line="18" column="54" lean-forward="false" selection-start-line="18" selection-start-column="54" selection-end-line="18" selection-end-column="54" />
-          <folding>
-            <element signature="e#0#40#0" expanded="true" />
+            <element signature="e#5#37#0" expanded="false" />
+            <element signature="e#49#71#0" expanded="false" />
+            <element signature="e#75#105#0" expanded="false" />
+            <element signature="e#117#226#0" expanded="false" />
+            <element signature="e#431#453#0" expanded="false" />
+            <element signature="e#463#493#0" expanded="false" />
+            <element signature="e#735#822#0" expanded="false" />
+            <element signature="e#1159#1233#0" expanded="false" />
+            <element signature="e#1267#1333#0" expanded="false" />
+            <element signature="e#1531#1625#0" expanded="false" />
+            <element signature="e#1654#1740#0" expanded="false" />
+            <element signature="e#1755#1778#0" expanded="false" />
+            <element signature="e#1846#1869#0" expanded="false" />
+            <element signature="e#1891#1921#0" expanded="false" />
+            <element signature="e#1960#1988#0" expanded="false" />
           </folding>
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/memory/templates/writing.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="2190">
-          <caret line="146" column="0" lean-forward="false" selection-start-line="146" selection-start-column="0" selection-end-line="146" selection-end-column="0" />
+        <state relative-caret-position="1950">
+          <caret line="130" column="75" selection-start-line="130" selection-start-column="75" selection-end-line="130" selection-end-column="75" />
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/memory/forms.py">
+    <entry file="file://$PROJECT_DIR$/memory/static/css/style4.css">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1005">
-          <caret line="67" column="34" lean-forward="false" selection-start-line="67" selection-start-column="34" selection-end-line="67" selection-end-column="34" />
+        <state relative-caret-position="15">
+          <caret line="1" column="16" selection-start-line="1" selection-start-column="16" selection-end-line="1" selection-end-column="16" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/memory/static/css/settings.css">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="345">
+          <caret line="23" column="32" selection-start-line="23" selection-start-column="32" selection-end-line="23" selection-end-column="32" />
           <folding>
-            <element signature="e#24#97#0" expanded="true" />
+            <element signature="e#910#994#0" expanded="false" />
+            <element signature="e#1017#1175#0" expanded="false" />
+            <element signature="e#1197#1304#0" expanded="false" />
+            <element signature="e#1316#1876#0" expanded="false" />
+            <element signature="e#1888#1914#0" expanded="false" />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/memory/views.py">
+    <entry file="file://$PROJECT_DIR$/memory/templates/browsing.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="75">
-          <caret line="5" column="36" lean-forward="false" selection-start-line="5" selection-start-column="36" selection-end-line="5" selection-end-column="36" />
+        <state relative-caret-position="0">
+          <caret line="0" column="15" selection-start-line="0" selection-start-column="15" selection-end-line="0" selection-end-column="15" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/memory/templates/album.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="2340">
+          <caret line="156" column="54" selection-start-line="156" selection-start-column="54" selection-end-line="156" selection-end-column="54" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/memory/templates/settings.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="405">
+          <caret line="27" column="0" selection-start-line="27" selection-start-column="0" selection-end-line="27" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/memory/static/css/homepage-body.css">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="630">
+          <caret line="42" column="11" selection-start-line="42" selection-start-column="11" selection-end-line="42" selection-end-column="11" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/memory/static/css/navigation-bar.css">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="120">
+          <caret line="20" column="5" selection-start-line="20" selection-start-column="5" selection-end-line="20" selection-end-column="5" />
+          <folding>
+            <element signature="e#5#37#0" expanded="false" />
+            <element signature="e#49#71#0" expanded="false" />
+            <element signature="e#75#105#0" expanded="false" />
+            <element signature="e#117#226#0" expanded="false" />
+            <element signature="e#431#453#0" expanded="false" />
+            <element signature="e#463#493#0" expanded="false" />
+            <element signature="e#735#822#0" expanded="false" />
+            <element signature="e#1159#1233#0" expanded="false" />
+            <element signature="e#1267#1333#0" expanded="false" />
+            <element signature="e#1531#1625#0" expanded="false" />
+            <element signature="e#1654#1740#0" expanded="false" />
+            <element signature="e#1755#1778#0" expanded="false" />
+            <element signature="e#1846#1869#0" expanded="false" />
+            <element signature="e#1891#1921#0" expanded="false" />
+            <element signature="e#1960#1988#0" expanded="false" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/memory/templates/writing.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/memory/static/css/style4.css">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="15">
+          <caret line="1" column="16" selection-start-line="1" selection-start-column="16" selection-end-line="1" selection-end-column="16" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/memory/static/css/settings.css">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="345">
+          <caret line="23" column="32" selection-start-line="23" selection-start-column="32" selection-end-line="23" selection-end-column="32" />
+          <folding>
+            <element signature="e#910#994#0" expanded="false" />
+            <element signature="e#1017#1175#0" expanded="false" />
+            <element signature="e#1197#1304#0" expanded="false" />
+            <element signature="e#1316#1876#0" expanded="false" />
+            <element signature="e#1888#1914#0" expanded="false" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/memory/templates/browsing.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="15" selection-start-line="0" selection-start-column="15" selection-end-line="0" selection-end-column="15" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/memory/templates/album.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="2340">
+          <caret line="156" column="54" selection-start-line="156" selection-start-column="54" selection-end-line="156" selection-end-column="54" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/memory/templates/settings.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1875">
+          <caret line="125" column="59" selection-start-line="125" selection-start-column="59" selection-end-line="125" selection-end-column="59" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/memory/static/css/settings.css">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding>
+            <element signature="e#910#994#0" expanded="false" />
+            <element signature="e#1017#1175#0" expanded="false" />
+            <element signature="e#1197#1304#0" expanded="false" />
+            <element signature="e#1316#1876#0" expanded="false" />
+            <element signature="e#1888#1914#0" expanded="false" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/memory/templates/browsing.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="195">
+          <caret line="13" column="4" selection-start-line="13" selection-start-column="4" selection-end-line="13" selection-end-column="4" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/memory/templates/album.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="2340">
+          <caret line="156" column="54" selection-start-line="156" selection-start-column="54" selection-end-line="156" selection-end-column="54" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/memory/templates/settings.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/memory/templates/browsing.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="5745">
+          <caret line="383" column="6" selection-start-line="383" selection-start-column="6" selection-end-line="383" selection-end-column="6" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/memory/templates/album.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="2340">
+          <caret line="156" column="54" selection-start-line="156" selection-start-column="54" selection-end-line="156" selection-end-column="54" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/memory/templates/writing.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="3120">
+          <caret line="208" column="29" selection-start-line="208" selection-start-column="29" selection-end-line="208" selection-end-column="29" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/memory/static/css/myStyle.css">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="345">
+          <caret line="61" column="24" selection-start-line="61" selection-start-column="24" selection-end-line="61" selection-end-column="24" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/memory/static/css/portrait.css">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/memory/static/css/album-body.css">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="255">
+          <caret line="17" column="1" selection-start-line="17" selection-start-column="1" selection-end-line="17" selection-end-column="1" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/memory/templates/registration/login.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="45">
+          <caret line="18" column="5" selection-start-line="18" selection-start-column="5" selection-end-line="18" selection-end-column="5" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/memory/templates/homepage.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-432">
+          <caret line="2" column="0" selection-start-line="2" selection-start-column="0" selection-end-line="55" selection-end-column="7" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/memory/templates/album.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="2340">
+          <caret line="156" column="54" selection-start-line="156" selection-start-column="54" selection-end-line="156" selection-end-column="54" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/memory/static/css/style.css">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="915">
+          <caret line="61" column="0" selection-start-line="61" selection-start-column="0" selection-end-line="62" selection-end-column="0" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/memory/static/css/settings.css">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="345">
+          <caret line="23" column="32" selection-start-line="23" selection-start-column="32" selection-end-line="23" selection-end-column="32" />
+          <folding>
+            <element signature="e#910#994#0" expanded="false" />
+            <element signature="e#1017#1175#0" expanded="false" />
+            <element signature="e#1197#1304#0" expanded="false" />
+            <element signature="e#1316#1876#0" expanded="false" />
+            <element signature="e#1888#1914#0" expanded="false" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/memory/templates/browsing.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="15" selection-start-line="0" selection-start-column="15" selection-end-line="0" selection-end-column="15" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/memory/templates/settings.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="405">
+          <caret line="27" column="0" selection-start-line="27" selection-start-column="0" selection-end-line="27" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/memory/static/css/homepage-body.css">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="630">
+          <caret line="42" column="11" selection-start-line="42" selection-start-column="11" selection-end-line="42" selection-end-column="11" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/memory/static/css/navigation-bar.css">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="120">
+          <caret line="20" column="5" selection-start-line="20" selection-start-column="5" selection-end-line="20" selection-end-column="5" />
+          <folding>
+            <element signature="e#5#37#0" expanded="false" />
+            <element signature="e#49#71#0" expanded="false" />
+            <element signature="e#75#105#0" expanded="false" />
+            <element signature="e#117#226#0" expanded="false" />
+            <element signature="e#431#453#0" expanded="false" />
+            <element signature="e#463#493#0" expanded="false" />
+            <element signature="e#735#822#0" expanded="false" />
+            <element signature="e#1159#1233#0" expanded="false" />
+            <element signature="e#1267#1333#0" expanded="false" />
+            <element signature="e#1531#1625#0" expanded="false" />
+            <element signature="e#1654#1740#0" expanded="false" />
+            <element signature="e#1755#1778#0" expanded="false" />
+            <element signature="e#1846#1869#0" expanded="false" />
+            <element signature="e#1891#1921#0" expanded="false" />
+            <element signature="e#1960#1988#0" expanded="false" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/memory/static/css/style4.css">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="15">
+          <caret line="1" column="16" selection-start-line="1" selection-start-column="16" selection-end-line="1" selection-end-column="16" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/memory/templates/writing.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="210">
+          <caret line="130" column="75" selection-start-line="130" selection-start-column="75" selection-end-line="130" selection-end-column="75" />
           <folding />
         </state>
       </provider>

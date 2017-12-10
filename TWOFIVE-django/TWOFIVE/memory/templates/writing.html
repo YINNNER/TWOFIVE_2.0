@@ -59,6 +59,7 @@
             var url = getFileUrl(sourceId);
             var imgPre = document.getElementById(targetId);
             imgPre.src = url;
+            $("#imgPre").css('opacity',100);
         }
 
         $(".a-upload").on("change","input[type='file']",function(){
@@ -84,7 +85,7 @@
         <div class="row" id="nav">
 
             <div class="col-sm-1 col-sm-offset-1">
-                <img src="/static/resource/homepage/logo.png" class="img-responsive" id="logoimg" alt="Responsive image">
+                <img src="/static/resource//homepage/logo.png" class="img-responsive" id="logoimg" alt="Responsive image">
             </div>
             <div class="col-sm-3 col-sm-offset-6">
                 <div class="input-group">
@@ -100,7 +101,7 @@
             <div class="col-sm-1" >
                 <div class="dropdown">
                     <button class="btn btn-default dropdown-toggle" type="button"  data-toggle="dropdown" >
-                        <img src="/static/resource/homepage/more.png" id="moreimg" >
+                        <img src="/static/resource//homepage/more.png" id="moreimg" >
                         <span class="caret"></span>
                     </button>
                     <ul class="dropdown-menu dropdown-menu-right" aria-labelledby="dLabel" >
@@ -116,21 +117,10 @@
     <div class="container">
         <div class="inner-bg">
             <!--tool bar-->
-             {% if article_form.errors %}
-
-                <p style="color: red;">
-
-                Please correct the error{{ article_form.errors|pluralize }} below.
-
-                </p>
-
-             {% endif %}
-
-            <form action="{% url 'memory:addArticle' %}" method="post">
+{#            <form action="{% url 'memory:publish' %}" method="post">#}
                 <div class="row">
                     <div class="col-sm-8 col-sm-offset-2 form-box">
 
-                            {% csrf_token %}
                             <!--top three-->
                             <div class="col-sm-10">
                                 <div class="form-left-top">
@@ -163,18 +153,19 @@
                                         <a href='#' data-role='justifyright'><i class="menu-right"></i></a>
                                     </div>
                                 </div>
-
+<script src='/static/js/jquery.js'></script>
+    <script src="/static/js/index.js"></script>
                                     <div class="wysiwyg-content" id="publish-content" contenteditable>
                                         <!--<div class="form-bottom">-->
-                                        <BR>
-
-                                                <table>{{ article_form.as_table}}</table>
-
-
-                                        <i style="align-self: flex-end">------{{ request.user.username }}</i>
-                                        <img id="imgPre" src="" width="100px" height="100px" alt="请插入图片" style="display: block;" />
+                                        <br>
+                                        <b><h1>Let's make a statement!</h1></b>
+                                        <br>
+                                        <i>This is an italicised sentence.</i>
+                                        <br>
+                                        <u>Very important information.</u>
+                                        <img id="imgPre" style="opacity: 0;display: block"; src="/static/resource/album/yiner-6.jpg" width="100px" height="100px" alt=" " style="display: block;" />
                                     </div>
-
+                                {% csrf_token %}
                                 <script>
                                     $(document).ready(function () {
                                          $("#publisher").click(function () {
@@ -209,7 +200,7 @@
                                 <div class="col-sm-2 ">
                                     <div class="form-right-top">
                                         <div class="form-button">
-                                            <button  type="submit" class="btn-publish" id="publisher">发布</button>
+                                            <button  type="button" class="btn-publish" id="publisher">发布</button>
                                         </div>
                                     </div>
                                 </div>
@@ -315,11 +306,5 @@
 		</script>
 
 </body>
-<script src="/static/js/prefixfree.min.js"></script>
-<script src='/static/js/jquery.js'></script>
 
-<script src="/static/js/index.js"></script>
-<script src="http://cdn.bootcss.com/jquery/1.11.2/jquery.min.js"></script>
-
-<script src="http://cdn.bootcss.com/bootstrap/3.3.4/js/bootstrap.min.js"></script>
 </html>

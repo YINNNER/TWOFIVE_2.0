@@ -10,8 +10,20 @@
     <link rel="stylesheet" href="http://cdn.bootcss.com/bootstrap/3.3.4/css/bootstrap.min.css">
     <link rel="stylesheet" type="text/css" href="/static/css/navigation-bar.css" />
     <link rel="stylesheet" type="text/css" href="/static/css/menu-button.css" />
+    <link rel="stylesheet" type="text/css" href="/static/css/homepage-body.css" />
+    <link rel="stylesheet" type="text/css" href="/static/css/portrait.css" />
     <link rel="stylesheet" type="text/css" href="/static/css/album-body.css" />
     <script src="/static/js/modernizr-2.6.2.min.js"></script>
+    <script type="text/javascript" src="/static/js/homepageJS-2.js"></script>
+    <script src="/static/js/polyfills.js"></script>
+    <script src="/static/js/homepageJS-1.js"></script>
+    <script src="http://cdn.bootcss.com/jquery/1.11.2/jquery.min.js"></script>
+    <script src="http://cdn.bootcss.com/bootstrap/3.3.4/js/bootstrap.min.js"></script>
+    <style>
+        hr{
+            border-top: 1px solid #eacfcf;!important;
+          }
+    </style>
     <script type="text/javascript">
         var _gaq = _gaq || [];
         _gaq.push(['_setAccount', 'UA-7243260-2']);
@@ -22,109 +34,129 @@
             var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
         })();
     </script>
+    <script type="text/javascript">
+        $(document).ready(function(e) {
+            var h = $(".about4_main ul li:first-child").height()/2;
+            var h1 = $(".about4_main ul li:last-child").height()/2;
+            $(".line").css("top",h);
+            $(".line").height($(".about4_main").height()-h1-h);
+        });
+    </script>
+    <script>
+                        $(document).ready(function () {
+                            $.getJSON("{% url 'memory:ajax_name' %}",function(data){
+                                //$("#sign").append(data.name);
 
+                            });
+
+
+                        })
+                    </script>
 
 </head>
+
 <body>
 
-<!-- Start Nav Structure -->
-<div class="row" id="nav">
-    <div class="col-sm-1 col-sm-offset-1">
-            <img src="/static/resource/homepage/logo.png" class="img-responsive" id="logoimg" alt="Responsive image">
-        </div>
-    <div class="col-sm-3 col-sm-offset-6">
-            <div class="input-group">
-                <span class="input-group-btn">
-                    <button class="btn btn-default" type="button">
-                        <span class="glyphicon glyphicon-search"></span>
+    <!--固定栏-->
+    <div class="container">
+        <!--导航栏-->
+        <div class="row" id="nav">
+            <div class="col-xs-3 col-xs-offset-1 col-md-1">
+                <img src="/static/resource/homepage/logo.png" id="logoimg" alt="Responsive image">
+            </div>
+            <div class="col-md-3 col-md-offset-5 hidden-xs hidden-sm">
+                <div class="input-group">
+                    <span class="input-group-btn">
+                        <button class="btn btn-default" type="button">
+                            <span class="glyphicon glyphicon-search" style="padding: 0 10px;"></span>
+                        </button>
+                    </span>
+                    <input type="text" class="form-control" placeholder="Search for...">
+
+                </div>
+            </div>
+            <div class="col-xs-2 col-xs-offset-6 col-md-1 col-md-offset-1" >
+                <div class="dropdown">
+                    <button class="btn btn-default dropdown-toggle" type="button"  data-toggle="dropdown" >
+                        <img src="/static/resource/homepage/more.png" id="moreimg" >
+                        <span class="caret"></span>
                     </button>
-                </span>
-                <input type="text" class="form-control" placeholder="Search for...">
+                    <ul class="dropdown-menu dropdown-menu-right" aria-labelledby="dLabel" >
+                        <li><a href="{% url 'logout' %}?next{{ request.path }}"><span style="color: #6c757d">退出登录</span></a></li>
 
+                    </ul>
+                </div>
             </div>
         </div>
-    <div class="col-sm-1" >
-        <div class="dropdown">
-            <button class="btn btn-default dropdown-toggle" type="button"  data-toggle="dropdown" >
-                <img src="/static/resource/homepage/more.png" id="moreimg" >
-                <span class="caret"></span>
-            </button>
-            <ul class="dropdown-menu dropdown-menu-right" aria-labelledby="dLabel" >
-                <li><a href="{% url 'logout' %}?next{{ request.path }}"><span style="color: #6c757d">&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp退出登录</span></a></li>
+        <!--信息栏-->
+        <div class="row" id="bar">
 
-            </ul>
-        </div>
-        </div>
-</div>
-<!-- End Nav Structure -->
+            <div class="col-md-10 col-sm-offset-1">
+                <div class='row'>
+                    <div class="center-bar">
+                        <div id="portrait">
+                            <img  src="{{ request.user.portrait_url }}"  id="head" >
+                        </div>
+                        <h2 id="sign">" {{ request.user.title }} "</h2>
+                    </div>
+                </div>
+            </div>
 
-<!-- Start info Structure -->
-<div class="container" id="info" >
-    <div class="row info">
-        <div class="col-sm-6 col-sm-offset-3" id="infobar">
-            <img src="/static/resource/homepage/portrait.png" height="58" />
-            <h3 style="display: inline-block; text-shadow: 2px 2px 6px #666;">"总要有一个拿来回忆的地方"</h3>
+
         </div>
     </div>
 
-</div>
-<!-- End info Structure -->
-
-
-<!-- Start container Structure -->
-<div class="container" id="album">
-    <div class="row">
-        <div class="col-sm-10 col-sm-offset-1" id="album_border">
-            <div class="row album" >
-                <div class="col-sm-3 box">
-                    <img  class="photo" src="/static/resource/album/IMG_5882.jpg"/>
+    <!-- Start container Structure -->
+    <div class="container" id="album">
+        <div class="row">
+            <div class="col-sm-10 col-sm-offset-1" id="album_border">
+                <div class="row album" >
+                    <div class="col-sm-3 box">
+                        <img  class="photo" src="/static/resource/album/IMG_5882.jpg"/>
+                    </div>
+                    <div class="col-sm-5 box">
+                        <img  class="photo" src="/static/resource/album/YINER-3 2.jpg"/>
+                    </div>
+                    <div class="col-sm-4 box">
+                        <img  class="photo" src="/static/resource/album/IMG_9162.jpg"/>
+                    </div>
                 </div>
-                <div class="col-sm-5 box">
-                    <img  class="photo" src="/static/resource/album/YINER-3 2.jpg"/>
-                </div>
-                <div class="col-sm-4 box">
-                    <img  class="photo" src="/static/resource/album/IMG_9162.jpg"/>
-                </div>
-            </div>
-            <div class="row album" >
-                <div class="col-sm-4 box">
-                    <img  class="photo" src="/static/resource/album/yiner-3.jpg"/>
-                </div>
-                <div class="col-sm-4 box">
-                    <img  class="photo" src="/static/resource/album/yiner-6.jpg"/>
-                </div>
-                <div class="col-sm-4 box">
-                    <img  class="photo" src="/static/resource/album/IMG_5533.jpg"/>
+                <div class="row album" >
+                    <div class="col-sm-4 box">
+                        <img  class="photo" src="/static/resource/album/yiner-3.jpg"/>
+                    </div>
+                    <div class="col-sm-4 box">
+                        <img  class="photo" src="/static/resource/album/yiner-6.jpg"/>
+                    </div>
+                    <div class="col-sm-4 box">
+                        <img  class="photo" src="/static/resource/album/IMG_5533.jpg"/>
+                    </div>
                 </div>
             </div>
+
         </div>
 
     </div>
+    <!-- End container Structure -->
 
-</div>
-<!-- End container Structure -->
+    <!-- Start menu Structure -->
+    <div class="component">
+        <button class="cn-button" id="cn-button">+</button>
+        <div class="cn-wrapper" id="cn-wrapper">
+                <ul><li><a href="{% url 'memory:writing' %}"><span class="icon-pencil"></span></a></li>
+                        <li><a href="{% url 'memory:album' %}"><span class="icon-picture"></span></a></li>
+                        <li><a href="{% url 'memory:homepage' %}"><span class="icon-home"></span></a></li>
+                        <li><a href="{% url 'memory:browsing' %}"><span class="icon-th"></span></a></li>
+                    <li><a href="{% url 'memory:settings' %}"><span class="icon-cog"></span></a></li>
+                </ul>
+            </div>
+        <div id="cn-overlay" class="cn-overlay"></div>
+    </div>
+    <!-- End menu Structure -->
+    <script src="/static/js/polyfills.js"></script>
+    <script src="/static/js/homepageJS-1.js"></script>
 
-<!-- Start menu Structure -->
-<div class="component">
-    <button class="cn-button" id="cn-button">+</button>
-    <div class="cn-wrapper" id="cn-wrapper">
-            <ul><li><a href="{% url 'memory:writing' %}"><span class="icon-pencil"></span></a></li>
-                    <li><a href="{% url 'memory:album' %}"><span class="icon-picture"></span></a></li>
-                    <li><a href="{% url 'memory:homepage' %}"><span class="icon-home"></span></a></li>
-                    <li><a href="{% url 'memory:browsing' %}"><span class="icon-th"></span></a></li>
-                <li><a href="{% url 'memory:settings' %}"><span class="icon-cog"></span></a></li>
-            </ul>
-        </div>
-    <div id="cn-overlay" class="cn-overlay"></div>
-</div>
-<!-- End menu Structure -->
-
-
-<script src="/static/js/polyfills.js"></script>
-<script src="/static/js/homepageJS-1.js"></script>
 
 </body>
-<script src="http://cdn.bootcss.com/jquery/1.11.2/jquery.min.js"></script>
 
-<script src="http://cdn.bootcss.com/bootstrap/3.3.4/js/bootstrap.min.js"></script>
 </html>

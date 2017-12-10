@@ -3,13 +3,14 @@
     margin-top: 100px;
 }
 
-#listgroup>.form-group{
+.form-group.row {
     font-size: initial;
-    padding: 10px 0;
+    padding: 10px 0!important;
+    text-align: center;
 }
 
 #content-part{
-    padding: 20px 40px;
+    padding: 20px 0px;
     background-color: #f7f7f79c;
     border: solid 1px #eeeeee9c;
     border-radius: 5px;
@@ -18,7 +19,7 @@
 
 a.btn-publish {
     /*垂直居中，父元素须设置为relative*/
-    position: absolute;
+    position: relative;
     top: 50%;
     transform: translateY(-50%);
     background-image: url("../resource/settings/gou.png");
@@ -87,7 +88,10 @@ a.btn-save{
 #label_name{
     text-align: right;
 }
+
+/*头像*/
 #port{
+    text-align: center;
     margin-top: -70px;
 }
 
