@@ -25,19 +25,35 @@ class User(AbstractUser):
 
 #文章数据库
 class Article(models.Model):
-    title = models.CharField(u'标题', max_length=256)
-    author = models.ForeignKey(to="User", blank=True, null=True, verbose_name='作者')
-    content = models.TextField(u'内容', default='', blank=True)
-    mood = models.ForeignKey(to="Mood", verbose_name="所属类别", null=True, blank=True)
-    pub_date = models.DateTimeField(u'发表时间', auto_now_add=True, editable=True)
-    update_time = models.DateTimeField(u'更新时间', auto_now=True, null=True)
-    summary = models.CharField(max_length=244, verbose_name="文章概要")
-    poll_count = models.IntegerField(verbose_name="点赞数", default=0)
-    score=models.IntegerField(verbose_name="分数", default=0)
+    class Meta:
+        verbose_name = '文章'
+        verbose_name_plural = verbose_name
+        ordering = ['pub_date']
+    STATUS_CHOICES = (
+        ('d', 'Draft'),
+        ('p', 'Published'),
+    )
 
+    title = models.CharField(u'标题', max_length=256)
+    author =models.ForeignKey(to="User",verbose_name="作者", null=True, blank=True)
+    status = models.CharField('文章状态', max_length=1, choices=STATUS_CHOICES)
+    content = models.TextField(u'内容', default='', blank=True)
+    mood = models.ForeignKey(to="Mood", verbose_name="所属类别", null=True, on_delete=models.SET_NULL)
+    limit=models.ForeignKey(to="Limit",verbose_name="权限", null=True, blank=True)
+    pub_date = models.DateTimeField(u'发表时间', auto_now_add=True, editable=True)
+
+    summary = models.CharField(u'摘要', max_length=54, blank=True, null=True,
+                                help_text="可选，如若为空将摘取正文的前54个字符")
+    # topped = models.BooleanField(u'置顶', default=False)
+    poll_count = models.PositiveIntegerField(verbose_name="点赞数", default=0)
+    score=models.IntegerField(verbose_name="分数", default=0)
+    img=models.ForeignKey(to="IMG")
 
     def __str__(self):
         return self.title + "+" + self.author.username
+
+    class Meta:
+        ordering = ['-pub_date']
 
 
 #评论
@@ -49,7 +65,7 @@ class Comment(models.Model):
     created = models.DateTimeField(verbose_name="评论时间",auto_now_add=True)
 
     def __str__(self):
-        return self.author.nickname + "----" + self.article.title + "+" + self.article.author.nickname
+        return self.author.nickname + "----" + self.article.title + "+" + self.article.author.username
 
 
 
@@ -76,17 +92,26 @@ class Article_poll(models.Model):
         unique_together = ("author", "article",)
         verbose_name_plural = "文章点赞表"
     def __str__(self):
-        return self.author.nickname+"---"+self.article.title+"+"+self.article.author.nickname
+        return self.author.nickname+"---"+self.article.title+"+"+self.article.author.username
 
 
 
 
 class Mood(models.Model):
-    "个人站点表"
+    "心情表"
     color = models.CharField(max_length=32,verbose_name="心情")
-    url = models.CharField(max_length=64,verbose_name="后缀",unique=True)
-    theme = models.CharField(max_length=32,verbose_name="主题")
+    # url = models.CharField(max_length=64,verbose_name="后缀",unique=True)
+    # theme = models.CharField(max_length=32,verbose_name="主题")
     author= models.OneToOneField(to="User", verbose_name="所属用户")
 
     def __str__(self):
         return self.color
+
+class Limit(models.Model):
+    limit=models.CharField(max_length=32,verbose_name="权限")
+    author = models.OneToOneField(to="User", verbose_name="所属用户")
+    def __str__(self):
+        return self.limit
+
+class IMG(models.Model):
+    img=models.ImageField(upload_to='upload')
