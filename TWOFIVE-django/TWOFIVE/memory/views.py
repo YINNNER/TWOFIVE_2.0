@@ -13,7 +13,8 @@ from TWOFIVE.settings import MEDIA_ROOT,MEDIA_URL
 ImageFile.LOAD_TRUNCATED_IMAGES = True
 
 from .models import *
-from django.http import Http404
+from django.views.generic import ListView
+import markdown2 #这里需要install markdown2 package
 
 # Create your views here.
 
@@ -166,10 +167,10 @@ def user_setting(request):
 
 
 
-# def get_articles(request):
-#     blogs = Article.objects.all().order_by('-update_time')
-#     return render_to_response('article_list.html',{'blogs':blogs})
-#
+def get_articles(request):
+    myArticles = Article.objects.all().order_by('-pub_date')
+    return render_to_response('homepage.html',{'myArticles':myArticles})
+
 #
 # def get_details(request,blog_id):
 #     try:
@@ -211,10 +212,28 @@ def addArticle(request):
     if request.method == 'POST':
         article_form = ArticleForm(request.POST)
     if article_form.is_valid():
-        print(article_form.cleaned_data)
-        article_form.save()
+        title=article_form.cleaned_data['title']
+        content = article_form.cleaned_data['content']
+        author=request.user
+        Article.objects.create(title=title, author=author, content=content)
+        #article_form.save()
         return redirect('/memory/homepage')
 
     else:
         article_form = ArticleForm()
         return render(request, 'writing.html', {'article_form': article_form})
+
+
+class HomeView(ListView):
+    template_name ="homepage.html"
+    context_object_name = "article_list"
+
+    def get_queryset(self):
+        article_list = Article.objects.filter(status='p')
+        for article in article_list:
+            article.content = markdown2.markdown(article.content, )
+        return article_list
+
+    def get_context_data(self, **kwargs):
+        kwargs['category_list'] = Mood.objects.all().order_by('color')
+        return super(HomeView, self).get_context_data(**kwargs)

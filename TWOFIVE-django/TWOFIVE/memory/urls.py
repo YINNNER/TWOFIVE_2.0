@@ -17,6 +17,6 @@ urlpatterns = [
     url(r'^user_setting/$',views.user_setting,name="user_setting"),
 
     url(r'^addArticle/$',views.addArticle, name="addArticle"),
-    # url(r'^articles/$', views.get_articles),
-    # url(r'^detail/(\d+)/$', views.get_details, name='article_get_detail'),
+
+
 ]
